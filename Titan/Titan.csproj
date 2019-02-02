@@ -5,11 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Logs\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0-dev-00024" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-beta" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.0.0-beta" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.0.0-beta" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.0.0-beta" />
   </ItemGroup>
 
   <ItemGroup>
