@@ -25,6 +25,7 @@ namespace Titan
         {
             services.AddMvc();
 
+
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1",new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My API", Version = "v1" });
