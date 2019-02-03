@@ -26,8 +26,7 @@ namespace Titan
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-            services.
-
+            services.AddMvc();
 
 
             services.AddSwaggerGen(options =>
