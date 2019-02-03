@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Titan.Middleware.MiddlewareModel;
 
 namespace Titan.Controllers
 {
@@ -29,7 +30,10 @@ namespace Titan.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            _log.LogInformation("Not Work");
+
+            throw new NotFoundCustomException("No data found", $"Please check your parameters id: {id}");
+          
         }
 
         // POST api/values

@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
+using Titan.Middleware;
+
 namespace Titan
 {
     public class Startup
@@ -23,6 +25,7 @@ namespace Titan
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddMvc();
 
 
@@ -40,7 +43,15 @@ namespace Titan
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(x => x
+              .AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader());
+
             loggerFactory.AddFile("Logs/Titan-{Date}.txt");
+
+            app.UseMiddleware<CustomExceptionMiddleware>();
 
             app.UseMvc();
 
