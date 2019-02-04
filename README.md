@@ -32,7 +32,7 @@ log hadeling - https://nblumhardt.com/2016/10/aspnet-core-file-logger/
             base.OnConfiguring(builder);
   }
 ```
-### Add migreation cmd using package manager console 
+### Add migreation cmd using package manager console (Go Titan.Entity)
 
 ```
 Add-Migration InitialCreate
