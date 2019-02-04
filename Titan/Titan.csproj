@@ -23,4 +23,11 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Titan.BusinessLogic\Titan.Service.csproj" />
+    <ProjectReference Include="..\Titan.Entity\Titan.Entity.csproj" />
+    <ProjectReference Include="..\Titan.Interface\Titan.Interface.csproj" />
+    <ProjectReference Include="..\Titan.Model\Titan.Model.csproj" />
+  </ItemGroup>
+
 </Project>

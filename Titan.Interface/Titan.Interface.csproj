@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Titan.Entity\Titan.Entity.csproj" />
+    <ProjectReference Include="..\Titan.Model\Titan.Model.csproj" />
+  </ItemGroup>
+
 </Project>
