@@ -34,8 +34,12 @@ log hadeling - https://nblumhardt.com/2016/10/aspnet-core-file-logger/
 ```
 ### Add migreation cmd using package manager console 
 
-```Add-Migration InitialCreate```
-```Update-Database```
+```
+Add-Migration InitialCreate
+```
+```
+Update-Database
+```
 
 ### Run Application 
 
