@@ -39,4 +39,4 @@ log hadeling - https://nblumhardt.com/2016/10/aspnet-core-file-logger/
 
 ### Run Application 
 
-
+![In a single picture](https://github.com/Kasunjith-Bimal/Titan/blob/master/Images/SwaggerUI.jpg)
