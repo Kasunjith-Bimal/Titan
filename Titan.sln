@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titan", "Titan\Titan.csproj", "{25E5DA3A-A8AF-418D-84E9-6E9E641BAE8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan", "Titan\Titan.csproj", "{25E5DA3A-A8AF-418D-84E9-6E9E641BAE8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titan.Entity", "Titan.Entity\Titan.Entity.csproj", "{7E804FC0-8F63-4FD3-B384-1B0764E084C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Entity", "Titan.Entity\Titan.Entity.csproj", "{7E804FC0-8F63-4FD3-B384-1B0764E084C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titan.Model", "Titan.Model\Titan.Model.csproj", "{00D9B33F-4C03-44EB-988D-94FA44C934AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Model", "Titan.Model\Titan.Model.csproj", "{00D9B33F-4C03-44EB-988D-94FA44C934AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titan.Interface", "Titan.Interface\Titan.Interface.csproj", "{53D3972F-88B8-43ED-9399-82AD75303677}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Interface", "Titan.Interface\Titan.Interface.csproj", "{53D3972F-88B8-43ED-9399-82AD75303677}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titan.Repository", "Titan.Repository\Titan.Repository.csproj", "{0321C382-DAE5-44FF-886C-918A3A096A7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Repository", "Titan.Repository\Titan.Repository.csproj", "{0321C382-DAE5-44FF-886C-918A3A096A7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titan.BusinessLogic", "Titan.BusinessLogic\Titan.BusinessLogic.csproj", "{15E032DB-64EC-4C83-B18D-408ACE067AC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titan.Service", "Titan.BusinessLogic\Titan.Service.csproj", "{15E032DB-64EC-4C83-B18D-408ACE067AC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

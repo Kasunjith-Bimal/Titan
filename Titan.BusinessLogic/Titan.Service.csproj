@@ -5,13 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0-preview.19074.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Titan.Entity\Titan.Entity.csproj" />
     <ProjectReference Include="..\Titan.Interface\Titan.Interface.csproj" />
     <ProjectReference Include="..\Titan.Model\Titan.Model.csproj" />
+    <ProjectReference Include="..\Titan.Repository\Titan.Repository.csproj" />
   </ItemGroup>
 
 </Project>
