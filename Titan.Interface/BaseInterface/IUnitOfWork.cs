@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Titan.Entity;
@@ -6,8 +7,9 @@ using Titan.Entity;
 
 namespace Titan.Interface.BaseInterface
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork: IDisposable
     {
-         TitanDbContext DbContext { get; }
+        DbContext _dbContextInstance { get; set; }
+        int Save();
     }
 }

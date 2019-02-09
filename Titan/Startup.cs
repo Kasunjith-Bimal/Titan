@@ -41,12 +41,11 @@ namespace Titan
             services.AddCors();
 
 
-
-            services.AddSingleton<IUnitOfWork, UnitOfWork>();
-            services.AddSingleton<IDisposable, UnitOfWork>();
-            services.AddSingleton<ITestService, TestService>();
-            services.AddSingleton<ITestRepository, TestRepository>();
-            services.AddSingleton(typeof(IRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IDisposable, UnitOfWork>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ITestService, TestService>();
+            services.AddScoped<ITestRepository, TestRepository>();
+            services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 
 
             services.AddMvc();
@@ -72,11 +71,10 @@ namespace Titan
               .AllowAnyMethod()
               .AllowAnyHeader());
 
+
             loggerFactory.AddFile("Logs/Titan-{Date}.txt");
 
             app.UseMiddleware<CustomExceptionMiddleware>();
-
-            app.UseMvc();
 
             app.UseStaticFiles();
 
@@ -92,7 +90,8 @@ namespace Titan
                 c.RoutePrefix = string.Empty;
             });
 
-           
+            app.UseMvc();
+
         }
     }
 }

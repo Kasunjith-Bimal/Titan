@@ -10,8 +10,7 @@ namespace Titan.Interface.ServiceInterface
     {
         void Add(TestDto entity);
 
-        void SaveChanges();
 
-        IEnumerable<TestDto> getAll();
+        IEnumerable<TestDto> Get();
     }
 }

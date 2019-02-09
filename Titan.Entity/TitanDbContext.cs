@@ -15,16 +15,16 @@ namespace Titan.Entity
 
         }
 
-        public TitanDbContext()
-        {
+        //public TitanDbContext()
+        //{
            
-        }
+        //}
 
-        protected override void OnConfiguring(DbContextOptionsBuilder builder)
-        {
-            builder.UseSqlServer("Server=DESKTOP-KK1QB16;Database=TitanDb;Trusted_Connection=True");
-            base.OnConfiguring(builder);
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder builder)
+        //{
+        //    builder.UseSqlServer("Server=DESKTOP-KK1QB16;Database=TitanDb;Trusted_Connection=True");
+        //    base.OnConfiguring(builder);
+        //}
 
         public DbSet<TestEntity> TestEntitys { get; set; }
     }

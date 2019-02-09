@@ -1,32 +1,35 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using Titan.Entity;
 using Titan.Interface.BaseInterface;
 
 namespace Titan.Repository.Base
 {
-    public class UnitOfWork :IDisposable, IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
-        private static TitanDbContext dbContext = null;
+       
+
+        public DbContext _dbContextInstance { get; set; } 
+
+     
         public bool disposed = false;
-        public TitanDbContext DbContext
+
+        
+
+        public UnitOfWork(TitanDbContext dbContextInstance)
         {
-            get
-            {
-                if (dbContext == null)
-                {
-                    dbContext = new TitanDbContext();
-                }
-                return dbContext;
-            }
+            _dbContextInstance = dbContextInstance;
+
         }
 
-        public virtual void Dispose(bool disposing)
+        private void Dispose(bool disposing)
         {
-            if (!this.disposed)
+            if (disposing)
             {
-                if (disposing)
+                if (this._dbContextInstance != null)
                 {
-                    this.DbContext.Dispose();
+                    this._dbContextInstance.Dispose();
+                    this._dbContextInstance = null;
                 }
             }
         }
@@ -36,5 +39,12 @@ namespace Titan.Repository.Base
             this.Dispose(true);
             GC.SuppressFinalize(this);
         }
+
+        public int Save()
+        {
+            return this._dbContextInstance.SaveChanges();
+        }
+
+       
     }
 }

@@ -8,19 +8,17 @@ using Titan.Interface.ServiceInterface;
 using Titan.Model;
 
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace Titan.Controllers
 {
     [Route("api/[controller]")]
     public class TestController : Controller
     {
-        public readonly ILogger<ValuesController> _log;
+        public readonly ILogger<TestController> _log;
 
         public readonly ITestService _testService;
 
 
-        public TestController(ILogger<ValuesController> log, ITestService testService)
+        public TestController(ILogger<TestController> log, ITestService testService)
         {
             _log = log;
             _testService = testService;
@@ -31,15 +29,16 @@ namespace Titan.Controllers
         {
             try
             {
-                return _testService.getAll();
+                return _testService.Get();
             }
             catch (Exception ex)
             {
                 _log.LogError(ex, ex.Message, null);
                 return null;
-               
+
             }
-         
+
+
         }
 
         // GET api/<controller>/5

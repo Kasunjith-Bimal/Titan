@@ -3,28 +3,25 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Titan.Entity;
 using Titan.Interface.BaseInterface;
 
 namespace UnitOfWorkWithRepositoryPartens.Repository.Base
 {
     public class GenericRepository<T> : IRepository<T>  where T : class
     {
+        private readonly IUnitOfWork _unitOfWork;
+
         public GenericRepository(IUnitOfWork unitOfWork)
         {
-            this.unitOfWork = unitOfWork;
-            this.dbset = unitOfWork.DbContext.Set<T>();
+            _unitOfWork = unitOfWork;
         }
-
-        private DbSet<T> dbset;
-     
-
-        public IUnitOfWork unitOfWork { get; private set; }
 
         public void Add(T entity)
         {
             try
             {
-                this.dbset.Add(entity);
+                _unitOfWork._dbContextInstance.Set<T>().Add(entity);
             }
             catch (Exception ex)
             {
@@ -38,7 +35,8 @@ namespace UnitOfWorkWithRepositoryPartens.Repository.Base
         {
             try
             {
-                throw new NotImplementedException();
+                T existing = _unitOfWork._dbContextInstance.Set<T>().Find(entity);
+                if (existing != null) _unitOfWork._dbContextInstance.Set<T>().Remove(existing);
             }
             catch (Exception ex)
             {
@@ -48,25 +46,13 @@ namespace UnitOfWorkWithRepositoryPartens.Repository.Base
             
         }
 
-        public void SaveChanges()
-        {
-            try
-            {
-                this.unitOfWork.DbContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-           
-        }
-
+ 
         public void Update(T entity)
         {
             try
             {
-                throw new NotImplementedException();
+                _unitOfWork._dbContextInstance.Entry(entity).State = EntityState.Modified;
+                _unitOfWork._dbContextInstance.Set<T>().Attach(entity);
             }
             catch (Exception ex)
             {
@@ -76,11 +62,11 @@ namespace UnitOfWorkWithRepositoryPartens.Repository.Base
           
         }
 
-        public IEnumerable<T> getAll()
+        public IEnumerable<T> Get()
         {
             try
             {
-                return this.dbset.ToList();
+                return this._unitOfWork._dbContextInstance.Set<T>().AsEnumerable<T>();
             }
             catch (Exception ex)
             {

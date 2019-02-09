@@ -10,7 +10,6 @@ namespace Titan.Repository
 {
     public class TestRepository : GenericRepository<TestEntity>, ITestRepository
     {
-
         public TestRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
         }
