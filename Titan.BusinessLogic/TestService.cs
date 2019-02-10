@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Titan.Entity;
@@ -12,11 +13,13 @@ namespace Titan.Service
     public class TestService : ITestService
     {
         private readonly IUnitOfWork _unitOfWork;
+        public IMapper _mapper;
         public ITestRepository _ITestRepository;
-        public TestService(ITestRepository ITestRepository, IUnitOfWork unitOfWork)
+        public TestService(ITestRepository ITestRepository, IUnitOfWork unitOfWork, IMapper mapper)
         {
             _ITestRepository = ITestRepository;
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
         public void Add(TestDto entity)
@@ -24,10 +27,9 @@ namespace Titan.Service
             try
             {
                 TestEntity testEntity = new TestEntity();
-
-                testEntity.TestEntityId = entity.TestEntityId;
-                testEntity.TestEntityName = entity.TestEntityName;
-
+                testEntity = _mapper.Map<TestEntity>(entity);
+                //testEntity.TestEntityId = entity.TestEntityId;
+                //testEntity.TestEntityName = entity.TestEntityName;
                 _ITestRepository.Add(testEntity);
                 _unitOfWork.Save();
 
@@ -46,19 +48,7 @@ namespace Titan.Service
             try
             {
                 IEnumerable<TestEntity> EntityList = _ITestRepository.Get();
-
-                List<TestDto> TestDtoList = new List<TestDto>();
-                foreach (var item in EntityList)
-                {
-                    TestDto dto = new TestDto();
-
-                    dto.TestEntityId = item.TestEntityId;
-                    dto.TestEntityName = item.TestEntityName;
-
-                    TestDtoList.Add(dto);
-
-                }
-
+                IEnumerable<TestDto> TestDtoList = _mapper.Map<IEnumerable<TestDto>>(EntityList);
                 return TestDtoList;
 
             }

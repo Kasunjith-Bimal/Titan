@@ -50,8 +50,16 @@ namespace Titan.Controllers
 
         // POST api/<controller>
         [HttpPost]
-        public void Post([FromBody]string value)
+        public void Post([FromBody]TestDto testDto)
         {
+            try
+            {
+                _testService.Add(testDto);
+            }
+            catch (Exception ex)
+            {
+                _log.LogError(ex, ex.Message, null);
+            }
         }
 
         // PUT api/<controller>/5
