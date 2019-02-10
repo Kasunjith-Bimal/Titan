@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Titan.Interface\Titan.Interface.csproj" />
     <ProjectReference Include="..\Titan.Model\Titan.Model.csproj" />
     <ProjectReference Include="..\Titan.Repository\Titan.Repository.csproj" />
