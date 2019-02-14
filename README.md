@@ -1,6 +1,5 @@
 
-# Titan - Master -  [![Build Status](https://dev.azure.com/kasunysoft0664/Titan/_apis/build/status/Kasunjith-Bimal.Titan?branchName=master)](https://dev.azure.com/kasunysoft0664/Titan/_build/latest?definitionId=1&branchName=master)
-
+# Titan - Master -  [![Build Status](https://dev.azure.com/kasunysoft0664/Titan/_apis/build/status/Titan-Prod-CI?branchName=master)](https://dev.azure.com/kasunysoft0664/Titan/_build/latest?definitionId=7&branchName=master)
 
 #Titan - development- [![Build Status](https://dev.azure.com/kasunysoft0664/Titan/_apis/build/status/Titan-Dev-CI?branchName=development)](https://dev.azure.com/kasunysoft0664/Titan/_build/latest?definitionId=6&branchName=development)
 
