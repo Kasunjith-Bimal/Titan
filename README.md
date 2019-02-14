@@ -3,7 +3,7 @@
 
 #Titan - development- [![Build Status](https://dev.azure.com/kasunysoft0664/Titan/_apis/build/status/Titan-Dev-CI?branchName=development)](https://dev.azure.com/kasunysoft0664/Titan/_build/latest?definitionId=6&branchName=development)
 
-
+kasunjith
 This project use asp .net core web api , angular ,swagger ,Serilog
 
 Exectiption hadeling - http://anthonygiretti.com/2018/11/18/common-features-in-asp-net-core-2-1-webapi-error-handling/
