@@ -22,15 +22,7 @@ log hadeling - https://nblumhardt.com/2016/10/aspnet-core-file-logger/
     "DefaultConnection": "Data Source=Sql servername;Initial Catalog=YourDatabaseName;Integrated Security=True"
   },
 ```
-### Change TitanDbContext.cs Class OnConfiguring Method 
 
-```'
-  protected override void OnConfiguring(DbContextOptionsBuilder builder)
-  {
-            builder.UseSqlServer("Data Source=Sql servername;Initial Catalog=YourDatabaseName;Integrated Security=True");
-            base.OnConfiguring(builder);
-  }
-```
 ### Add migreation cmd using package manager console (Go Titan.Entity)
 
 ```
