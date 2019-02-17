@@ -28,8 +28,6 @@ namespace Titan.Service
             {
                 TestEntity testEntity = new TestEntity();
                 testEntity = _mapper.Map<TestEntity>(entity);
-                //testEntity.TestEntityId = entity.TestEntityId;
-                //testEntity.TestEntityName = entity.TestEntityName;
                 _ITestRepository.Add(testEntity);
                 _unitOfWork.Save();
 
@@ -40,6 +38,21 @@ namespace Titan.Service
                 throw ex;
             }
             
+        }
+
+        public void Delete(int id)
+        {
+            try
+            {
+                TestEntity entity = _ITestRepository.GetById(id);
+                _ITestRepository.Delete(entity);
+                _unitOfWork.Save();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
 
         public IEnumerable<TestDto> Get()
@@ -61,6 +74,35 @@ namespace Titan.Service
 
         }
 
-       
+        public TestDto GetById(int id)
+        {
+            try
+            {
+                TestEntity entity = _ITestRepository.GetById(id);
+                return _mapper.Map<TestDto>(entity);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public void Update(TestDto entity)
+        {
+            try
+            {
+                     TestEntity entitydata = _mapper.Map<TestEntity>(entity);
+                    _ITestRepository.Update(entitydata);
+                    _unitOfWork.Save();
+                
+               
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

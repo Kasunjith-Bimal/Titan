@@ -10,7 +10,12 @@ namespace Titan.Interface.ServiceInterface
     {
         void Add(TestDto entity);
 
-
         IEnumerable<TestDto> Get();
+
+        TestDto GetById(int id);
+
+        void Update(TestDto entity);
+
+        void Delete(int id);
     }
 }
