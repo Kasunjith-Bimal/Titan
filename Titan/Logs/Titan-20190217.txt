@@ -1693,3 +1693,962 @@ FROM [TestEntitys] AS [t]" (0723d8ff)
 2019-02-17T17:41:27.7739985+05:30 0HLKKQ35OVJ95:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
 2019-02-17T17:41:27.7790389+05:30 0HLKKQ35OVJ95:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 17.6975ms (afa2e885)
 2019-02-17T17:41:30.4977103+05:30 0HLKKQ35OVJ95:00000005 [INF] Request finished in 2735.177ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T19:30:16.8722027+05:30 0HLKKS0VCACKM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T19:30:17.2865116+05:30 0HLKKS0VCACKM:00000001 [INF] Request finished in 504.3457ms 200 text/html (791a596a)
+2019-02-17T19:30:17.5298597+05:30 0HLKKS0VCACKM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T19:30:17.6190435+05:30 0HLKKS0VCACKO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T19:30:17.8617418+05:30 0HLKKS0VCACKM:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T19:30:17.8694917+05:30 0HLKKS0VCACKM:00000002 [INF] Request finished in 335.7911ms 200 text/plain (791a596a)
+2019-02-17T19:30:17.8805086+05:30 0HLKKS0VCACKM:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T19:30:17.9465067+05:30 0HLKKS0VCACKM:00000003 [INF] Request finished in 62.9698ms 404  (791a596a)
+2019-02-17T19:30:18.1781883+05:30 0HLKKS0VCACKO:00000001 [INF] Request finished in 495.0463ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T19:30:20.6123528+05:30 0HLKKS0VCACKM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T19:30:20.6451982+05:30 0HLKKS0VCACKM:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T19:30:20.6501629+05:30 0HLKKS0VCACKM:00000004 [INF] Request finished in 35.1467ms 200 text/plain (791a596a)
+2019-02-17T19:30:20.6654463+05:30 0HLKKS0VCACKO:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T19:30:20.6770765+05:30 0HLKKS0VCACKO:00000002 [INF] Request finished in 2.4927ms 404  (791a596a)
+2019-02-17T19:30:50.9867017+05:30 0HLKKS0VCACKM:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/20   (ca22a1cb)
+2019-02-17T19:30:51.4794278+05:30 0HLKKS0VCACKM:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["20"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T19:30:52.2097053+05:30 0HLKKS0VCACKM:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T19:30:53.3114977+05:30 0HLKKS0VCACKM:00000005 [INF] Executed DbCommand ("90"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T19:30:53.4162764+05:30 0HLKKS0VCACKM:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T19:30:53.4437392+05:30 0HLKKS0VCACKM:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 2356.8499ms (afa2e885)
+2019-02-17T19:30:53.4538573+05:30 0HLKKS0VCACKM:00000005 [INF] Request finished in 2465.06ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T19:36:20.5471752+05:30 0HLKKS4BOSF3J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T19:36:20.9621189+05:30 0HLKKS4BOSF3J:00000001 [INF] Request finished in 466.0624ms 200 text/html (791a596a)
+2019-02-17T19:36:21.1553628+05:30 0HLKKS4BOSF3J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T19:36:21.2527699+05:30 0HLKKS4BOSF3L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T19:36:21.4346075+05:30 0HLKKS4BOSF3J:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T19:36:21.4389783+05:30 0HLKKS4BOSF3J:00000002 [INF] Request finished in 282.5817ms 200 text/plain (791a596a)
+2019-02-17T19:36:21.4470907+05:30 0HLKKS4BOSF3J:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T19:36:21.5102100+05:30 0HLKKS4BOSF3J:00000003 [INF] Request finished in 61.4267ms 404  (791a596a)
+2019-02-17T19:36:21.6774432+05:30 0HLKKS4BOSF3L:00000001 [INF] Request finished in 405.8028ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T19:36:23.6066064+05:30 0HLKKS4BOSF3J:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T19:36:23.6275267+05:30 0HLKKS4BOSF3J:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T19:36:23.6301731+05:30 0HLKKS4BOSF3J:00000004 [INF] Request finished in 23.2336ms 200 text/plain (791a596a)
+2019-02-17T19:36:23.8129187+05:30 0HLKKS4BOSF3L:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T19:36:23.8172442+05:30 0HLKKS4BOSF3L:00000002 [INF] Request finished in 3.1082ms 404  (791a596a)
+2019-02-17T19:36:44.3888760+05:30 0HLKKS4BOSF3J:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T19:36:44.8844026+05:30 0HLKKS4BOSF3J:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T19:36:45.7522275+05:30 0HLKKS4BOSF3J:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T19:36:46.8219202+05:30 0HLKKS4BOSF3J:00000005 [INF] Executed DbCommand ("80"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T19:36:47.0490557+05:30 0HLKKS4BOSF3J:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T19:36:47.0712835+05:30 0HLKKS4BOSF3J:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 2601.0547ms (afa2e885)
+2019-02-17T19:36:47.0778973+05:30 0HLKKS4BOSF3J:00000005 [INF] Request finished in 2688.6356ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T19:37:07.2408561+05:30 0HLKKS4BOSF3L:00000003 [INF] Request starting HTTP/1.1 PUT http://localhost:59153/api/Test/7 application/json-patch+json 43 (ca22a1cb)
+2019-02-17T19:37:07.2550732+05:30 0HLKKS4BOSF3L:00000003 [INF] Policy execution successful. (0204925d)
+2019-02-17T19:37:07.3769898+05:30 0HLKKS4BOSF3L:00000003 [INF] Executing action method "Titan.Controllers.TestController.Put (Titan)" with arguments (["7", "Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T19:37:07.3838889+05:30 0HLKKS4BOSF3L:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T19:37:07.6098974+05:30 0HLKKS4BOSF3L:00000003 [INF] Executed DbCommand ("50"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T19:37:10.7196507+05:30 0HLKKS4BOSF3L:00000003 [INF] Executed action "Titan.Controllers.TestController.Put (Titan)" in 3446.2376ms (afa2e885)
+2019-02-17T19:37:10.7263531+05:30 0HLKKS4BOSF3L:00000003 [INF] Request finished in 3484.3521ms 200  (791a596a)
+2019-02-17T19:37:21.0543317+05:30 0HLKKS4BOSF3J:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T19:37:21.0571545+05:30 0HLKKS4BOSF3J:00000006 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T19:37:21.0601343+05:30 0HLKKS4BOSF3J:00000006 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T19:37:21.0667495+05:30 0HLKKS4BOSF3J:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T19:37:21.0706296+05:30 0HLKKS4BOSF3J:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T19:37:21.0750635+05:30 0HLKKS4BOSF3J:00000006 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 16.5225ms (afa2e885)
+2019-02-17T19:37:21.0815466+05:30 0HLKKS4BOSF3J:00000006 [INF] Request finished in 23.3446ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T19:37:24.5272676+05:30 0HLKKS4BOSF3L:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T19:37:24.5303857+05:30 0HLKKS4BOSF3L:00000004 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T19:37:24.5333274+05:30 0HLKKS4BOSF3L:00000004 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T19:37:24.5367865+05:30 0HLKKS4BOSF3L:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T19:37:24.5407567+05:30 0HLKKS4BOSF3L:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T19:37:24.5456407+05:30 0HLKKS4BOSF3L:00000004 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 13.4516ms (afa2e885)
+2019-02-17T19:37:24.5501559+05:30 0HLKKS4BOSF3L:00000004 [INF] Request finished in 22.1813ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T19:37:35.2752499+05:30 0HLKKS4BOSF3J:00000007 [INF] Request starting HTTP/1.1 PUT http://localhost:59153/api/Test/7 application/json-patch+json 43 (ca22a1cb)
+2019-02-17T19:37:35.2976662+05:30 0HLKKS4BOSF3J:00000007 [INF] Policy execution successful. (0204925d)
+2019-02-17T19:37:35.3059925+05:30 0HLKKS4BOSF3J:00000007 [INF] Executing action method "Titan.Controllers.TestController.Put (Titan)" with arguments (["7", "Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T19:37:35.3115981+05:30 0HLKKS4BOSF3J:00000007 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T19:37:35.3209085+05:30 0HLKKS4BOSF3J:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T19:37:50.3462453+05:30 0HLKKS4BOSF3J:00000007 [INF] Executed action "Titan.Controllers.TestController.Put (Titan)" in 15045.7899ms (afa2e885)
+2019-02-17T19:37:50.3508423+05:30 0HLKKS4BOSF3J:00000007 [INF] Request finished in 15073.8049ms 200  (791a596a)
+2019-02-17T19:39:02.9205220+05:30 0HLKKS5S5NAHT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T19:39:03.3316556+05:30 0HLKKS5S5NAHT:00000001 [INF] Request finished in 437.1658ms 200 text/html (791a596a)
+2019-02-17T19:39:03.5251449+05:30 0HLKKS5S5NAHT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T19:39:03.7012621+05:30 0HLKKS5S5NAHV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T19:39:03.9270179+05:30 0HLKKS5S5NAHT:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T19:39:03.9332628+05:30 0HLKKS5S5NAHT:00000002 [INF] Request finished in 406.1332ms 200 text/plain (791a596a)
+2019-02-17T19:39:03.9474130+05:30 0HLKKS5S5NAHT:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T19:39:04.0204283+05:30 0HLKKS5S5NAHT:00000003 [INF] Request finished in 63.3206ms 404  (791a596a)
+2019-02-17T19:39:04.1269159+05:30 0HLKKS5S5NAHV:00000001 [INF] Request finished in 432.9924ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T19:39:06.2527597+05:30 0HLKKS5S5NAHT:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T19:39:06.2897732+05:30 0HLKKS5S5NAHT:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T19:39:06.3181151+05:30 0HLKKS5S5NAHT:00000004 [INF] Request finished in 39.5149ms 200 text/plain (791a596a)
+2019-02-17T19:39:06.3412031+05:30 0HLKKS5S5NAHV:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T19:39:06.3474596+05:30 0HLKKS5S5NAHV:00000002 [INF] Request finished in 29.8571ms 404  (791a596a)
+2019-02-17T19:39:10.8512329+05:30 0HLKKS5S5NAHT:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T19:39:11.3962287+05:30 0HLKKS5S5NAHT:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T19:39:12.2421486+05:30 0HLKKS5S5NAHT:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T19:39:13.4242490+05:30 0HLKKS5S5NAHT:00000005 [INF] Executed DbCommand ("85"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T19:39:13.6582564+05:30 0HLKKS5S5NAHT:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T19:39:13.6830567+05:30 0HLKKS5S5NAHT:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 2738.9853ms (afa2e885)
+2019-02-17T19:39:13.6979156+05:30 0HLKKS5S5NAHT:00000005 [INF] Request finished in 2837.6682ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T19:39:39.5676337+05:30 0HLKKS5S5NAHV:00000003 [INF] Request starting HTTP/1.1 PUT http://localhost:59153/api/Test/7 application/json 46 (ca22a1cb)
+2019-02-17T19:39:39.5852716+05:30 0HLKKS5S5NAHV:00000003 [INF] Policy execution successful. (0204925d)
+2019-02-17T19:39:39.7060770+05:30 0HLKKS5S5NAHV:00000003 [INF] Executing action method "Titan.Controllers.TestController.Put (Titan)" with arguments (["7", "Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T19:39:43.9214799+05:30 0HLKKS5S5NAHV:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T19:39:44.1889585+05:30 0HLKKS5S5NAHV:00000003 [INF] Executed DbCommand ("67"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T19:40:07.4826742+05:30 0HLKKS5S5NAHV:00000003 [INF] Executed action "Titan.Controllers.TestController.Put (Titan)" in 27879.4517ms (afa2e885)
+2019-02-17T19:40:07.4877243+05:30 0HLKKS5S5NAHV:00000003 [INF] Request finished in 27921.1449ms 200  (791a596a)
+2019-02-17T19:55:56.4934134+05:30 0HLKKSFA844F2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T19:55:56.8344310+05:30 0HLKKSFA844F2:00000001 [INF] Request finished in 374.748ms 200 text/html (791a596a)
+2019-02-17T19:55:57.0341878+05:30 0HLKKSFA844F2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T19:55:57.1318376+05:30 0HLKKSFA844F3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T19:55:57.4147207+05:30 0HLKKSFA844F2:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T19:55:57.4179018+05:30 0HLKKSFA844F2:00000002 [INF] Request finished in 383.6623ms 200 text/plain (791a596a)
+2019-02-17T19:55:57.4439998+05:30 0HLKKSFA844F2:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T19:55:57.5108886+05:30 0HLKKSFA844F2:00000003 [INF] Request finished in 70.242ms 404  (791a596a)
+2019-02-17T19:55:57.6049405+05:30 0HLKKSFA844F3:00000001 [INF] Request finished in 473.3312ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T19:55:59.9190951+05:30 0HLKKSFA844F2:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T19:55:59.9519311+05:30 0HLKKSFA844F2:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T19:55:59.9553308+05:30 0HLKKSFA844F2:00000004 [INF] Request finished in 35.0617ms 200 text/plain (791a596a)
+2019-02-17T19:55:59.9802492+05:30 0HLKKSFA844F3:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T19:55:59.9906300+05:30 0HLKKSFA844F3:00000002 [INF] Request finished in 2.4282ms 404  (791a596a)
+2019-02-17T19:56:20.0930783+05:30 0HLKKSFA844F2:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T19:56:20.5406355+05:30 0HLKKSFA844F2:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T19:56:21.3365852+05:30 0HLKKSFA844F2:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T19:56:22.2202708+05:30 0HLKKSFA844F2:00000005 [INF] Executed DbCommand ("52"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T19:56:22.3937397+05:30 0HLKKSFA844F2:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T19:56:22.4161963+05:30 0HLKKSFA844F2:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 2229.7725ms (afa2e885)
+2019-02-17T19:56:22.4222787+05:30 0HLKKSFA844F2:00000005 [INF] Request finished in 2330.5484ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T19:56:42.9613015+05:30 0HLKKSFA844F3:00000003 [INF] Request starting HTTP/1.1 PUT http://localhost:59153/api/Test/7 application/json-patch+json 45 (ca22a1cb)
+2019-02-17T19:56:42.9782326+05:30 0HLKKSFA844F3:00000003 [INF] Policy execution successful. (0204925d)
+2019-02-17T19:56:43.1062917+05:30 0HLKKSFA844F3:00000003 [INF] Executing action method "Titan.Controllers.TestController.Put (Titan)" with arguments (["7", "Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T19:56:46.9631154+05:30 0HLKKSFA844F3:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T19:56:47.2109371+05:30 0HLKKSFA844F3:00000003 [INF] Executed DbCommand ("46"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T19:56:55.2391355+05:30 0HLKKSFA844F3:00000003 [INF] Executed action "Titan.Controllers.TestController.Put (Titan)" in 12244.4456ms (afa2e885)
+2019-02-17T19:56:55.2438639+05:30 0HLKKSFA844F3:00000003 [INF] Request finished in 12282.3608ms 200  (791a596a)
+2019-02-17T19:57:00.5028921+05:30 0HLKKSFA844F2:00000006 [INF] Request starting HTTP/1.1 PUT http://localhost:59153/api/Test/7 application/json-patch+json 45 (ca22a1cb)
+2019-02-17T19:57:00.5075912+05:30 0HLKKSFA844F2:00000006 [INF] Policy execution successful. (0204925d)
+2019-02-17T19:57:00.5143170+05:30 0HLKKSFA844F2:00000006 [INF] Executing action method "Titan.Controllers.TestController.Put (Titan)" with arguments (["7", "Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T19:57:05.9482512+05:30 0HLKKSFA844F2:00000006 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T19:57:05.9596039+05:30 0HLKKSFA844F2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T19:57:26.1065122+05:30 0HLKKSFA844F2:00000006 [INF] Executed action "Titan.Controllers.TestController.Put (Titan)" in 25595.4359ms (afa2e885)
+2019-02-17T19:57:26.1109831+05:30 0HLKKSFA844F2:00000006 [INF] Request finished in 25607.8043ms 200  (791a596a)
+2019-02-17T20:09:09.8089477+05:30 0HLKKSMMLHPBT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T20:09:10.2584264+05:30 0HLKKSMMLHPBT:00000001 [INF] Request finished in 485.0121ms 200 text/html (791a596a)
+2019-02-17T20:09:10.4816276+05:30 0HLKKSMMLHPBT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T20:09:10.5162276+05:30 0HLKKSMMLHPBU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T20:09:10.8285830+05:30 0HLKKSMMLHPBT:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T20:09:10.8529169+05:30 0HLKKSMMLHPBT:00000002 [INF] Request finished in 350.405ms 200 text/plain (791a596a)
+2019-02-17T20:09:10.8599959+05:30 0HLKKSMMLHPBT:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T20:09:10.9158411+05:30 0HLKKSMMLHPBT:00000003 [INF] Request finished in 54.3395ms 404  (791a596a)
+2019-02-17T20:09:11.1198011+05:30 0HLKKSMMLHPBU:00000001 [INF] Request finished in 566.8074ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T20:09:13.4627021+05:30 0HLKKSMMLHPBT:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T20:09:13.4844560+05:30 0HLKKSMMLHPBT:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T20:09:13.5073121+05:30 0HLKKSMMLHPBT:00000004 [INF] Request finished in 23.9065ms 200 text/plain (791a596a)
+2019-02-17T20:09:13.5326009+05:30 0HLKKSMMLHPBU:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T20:09:13.5365044+05:30 0HLKKSMMLHPBU:00000002 [INF] Request finished in 25.6701ms 404  (791a596a)
+2019-02-17T20:09:28.6699859+05:30 0HLKKSMMLHPBT:00000005 [INF] Request starting HTTP/1.1 PUT http://localhost:59153/api/Test/7 application/json-patch+json 49 (ca22a1cb)
+2019-02-17T20:09:28.6932770+05:30 0HLKKSMMLHPBT:00000005 [INF] Policy execution successful. (0204925d)
+2019-02-17T20:09:29.2754493+05:30 0HLKKSMMLHPBT:00000005 [INF] Executing action method "Titan.Controllers.TestController.Put (Titan)" with arguments (["7", "Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T20:09:32.8058383+05:30 0HLKKSMMLHPBT:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T20:09:34.0868859+05:30 0HLKKSMMLHPBT:00000005 [INF] Executed DbCommand ("181"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T20:09:41.6574117+05:30 0HLKKSMMLHPBT:00000005 [ERR] The instance of entity type 'TestEntity' cannot be tracked because another instance with the same key value for {'TestEntityId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values. (fc34cb9b)
+System.InvalidOperationException: The instance of entity type 'TestEntity' cannot be tracked because another instance with the same key value for {'TestEntityId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Titan.Service.TestService.<Update>d__8.MoveNext() in D:\Titan\Titan.BusinessLogic\TestService.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Titan.Controllers.TestController.<Put>d__6.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 85
+2019-02-17T20:09:41.6765989+05:30 0HLKKSMMLHPBT:00000005 [INF] Executed action "Titan.Controllers.TestController.Put (Titan)" in 12893.9561ms (afa2e885)
+2019-02-17T20:09:41.6897289+05:30 0HLKKSMMLHPBT:00000005 [INF] Request finished in 13021.2683ms 200  (791a596a)
+2019-02-17T20:10:19.1845989+05:30 0HLKKSNBB973V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T20:10:19.5286488+05:30 0HLKKSNBB973V:00000001 [INF] Request finished in 394.4984ms 200 text/html (791a596a)
+2019-02-17T20:10:19.6843978+05:30 0HLKKSNBB973V:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T20:10:19.8305521+05:30 0HLKKSNBB9741:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T20:10:20.0157218+05:30 0HLKKSNBB973V:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T20:10:20.0195693+05:30 0HLKKSNBB973V:00000002 [INF] Request finished in 339.0564ms 200 text/plain (791a596a)
+2019-02-17T20:10:20.0296209+05:30 0HLKKSNBB973V:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T20:10:20.1384041+05:30 0HLKKSNBB973V:00000003 [INF] Request finished in 92.5019ms 404  (791a596a)
+2019-02-17T20:10:20.2819693+05:30 0HLKKSNBB9741:00000001 [INF] Request finished in 451.5747ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T20:10:22.6445849+05:30 0HLKKSNBB973V:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T20:10:22.6839293+05:30 0HLKKSNBB973V:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T20:10:22.6867456+05:30 0HLKKSNBB973V:00000004 [INF] Request finished in 42.4151ms 200 text/plain (791a596a)
+2019-02-17T20:10:22.7020693+05:30 0HLKKSNBB9741:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T20:10:22.7153398+05:30 0HLKKSNBB9741:00000002 [INF] Request finished in 6.6408ms 404  (791a596a)
+2019-02-17T20:10:35.2040084+05:30 0HLKKSNBB973V:00000005 [INF] Request starting HTTP/1.1 PUT http://localhost:59153/api/Test/7 application/json-patch+json 51 (ca22a1cb)
+2019-02-17T20:10:35.2208130+05:30 0HLKKSNBB973V:00000005 [INF] Policy execution successful. (0204925d)
+2019-02-17T20:10:35.7597576+05:30 0HLKKSNBB973V:00000005 [INF] Executing action method "Titan.Controllers.TestController.Put (Titan)" with arguments (["7", "Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T20:10:43.3036259+05:30 0HLKKSNBB973V:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T20:10:46.6992243+05:30 0HLKKSNBB973V:00000005 [INF] Executed DbCommand ("154"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [TestEntitys] SET [TestEntityName] = @p0
+WHERE [TestEntityId] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2019-02-17T20:10:46.7797418+05:30 0HLKKSNBB973V:00000005 [INF] Executed action "Titan.Controllers.TestController.Put (Titan)" in 11465.6275ms (afa2e885)
+2019-02-17T20:10:46.7917935+05:30 0HLKKSNBB973V:00000005 [INF] Request finished in 11586.1965ms 200  (791a596a)
+2019-02-17T20:10:51.4279771+05:30 0HLKKSNBB9741:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T20:10:51.4417932+05:30 0HLKKSNBB9741:00000003 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T20:10:51.4539751+05:30 0HLKKSNBB9741:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T20:10:51.8873387+05:30 0HLKKSNBB9741:00000003 [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T20:10:52.0137848+05:30 0HLKKSNBB9741:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T20:10:52.0227546+05:30 0HLKKSNBB9741:00000003 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 582.0915ms (afa2e885)
+2019-02-17T20:10:52.0306778+05:30 0HLKKSNBB9741:00000003 [INF] Request finished in 599.4454ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T20:42:26.9862709+05:30 0HLKKT99S5LSN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T20:42:27.3791273+05:30 0HLKKT99S5LSN:00000001 [INF] Request finished in 441.0908ms 200 text/html (791a596a)
+2019-02-17T20:42:27.5834430+05:30 0HLKKT99S5LSN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T20:42:27.6916209+05:30 0HLKKT99S5LSO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T20:42:27.9311958+05:30 0HLKKT99S5LSN:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T20:42:27.9351948+05:30 0HLKKT99S5LSN:00000002 [INF] Request finished in 351.5083ms 200 text/plain (791a596a)
+2019-02-17T20:42:27.9708561+05:30 0HLKKT99S5LSN:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T20:42:28.0219545+05:30 0HLKKT99S5LSN:00000003 [INF] Request finished in 50.6437ms 404  (791a596a)
+2019-02-17T20:42:28.1983757+05:30 0HLKKT99S5LSO:00000001 [INF] Request finished in 508.1393ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T20:42:31.1462605+05:30 0HLKKT99S5LSN:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T20:42:31.1859951+05:30 0HLKKT99S5LSN:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T20:42:31.1889641+05:30 0HLKKT99S5LSN:00000004 [INF] Request finished in 42.0167ms 200 text/plain (791a596a)
+2019-02-17T20:42:31.2011796+05:30 0HLKKT99S5LSO:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T20:42:31.2102680+05:30 0HLKKT99S5LSO:00000002 [INF] Request finished in 2.7582ms 404  (791a596a)
+2019-02-17T20:42:45.4268667+05:30 0HLKKT99S5LSN:00000005 [INF] Request starting HTTP/1.1 PUT http://localhost:59153/api/Test/7 application/json-patch+json 47 (ca22a1cb)
+2019-02-17T20:42:45.4473520+05:30 0HLKKT99S5LSN:00000005 [INF] Policy execution successful. (0204925d)
+2019-02-17T20:42:46.0673246+05:30 0HLKKT99S5LSN:00000005 [INF] Executing action method "Titan.Controllers.TestController.Put (Titan)" with arguments (["7", "Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T20:42:52.6659326+05:30 0HLKKT99S5LSN:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T20:42:53.8115031+05:30 0HLKKT99S5LSN:00000005 [INF] Executed DbCommand ("104"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T20:46:54.2446063+05:30 0HLKKTBPGUJH4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T20:46:54.5855038+05:30 0HLKKTBPGUJH4:00000001 [INF] Request finished in 388.7173ms 200 text/html (791a596a)
+2019-02-17T20:46:54.8084758+05:30 0HLKKTBPGUJH4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T20:46:54.9034547+05:30 0HLKKTBPGUJH5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T20:46:55.1168130+05:30 0HLKKTBPGUJH4:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T20:46:55.1389962+05:30 0HLKKTBPGUJH4:00000002 [INF] Request finished in 324.3557ms 200 text/plain (791a596a)
+2019-02-17T20:46:55.1476945+05:30 0HLKKTBPGUJH4:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T20:46:55.2071261+05:30 0HLKKTBPGUJH4:00000003 [INF] Request finished in 58.3868ms 404  (791a596a)
+2019-02-17T20:46:55.5897081+05:30 0HLKKTBPGUJH5:00000001 [INF] Request finished in 637.171ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T20:46:58.2641351+05:30 0HLKKTBPGUJH4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T20:46:58.2924809+05:30 0HLKKTBPGUJH4:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T20:46:58.2959304+05:30 0HLKKTBPGUJH4:00000004 [INF] Request finished in 31.0337ms 200 text/plain (791a596a)
+2019-02-17T20:46:58.3042308+05:30 0HLKKTBPGUJH5:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T20:46:58.3127259+05:30 0HLKKTBPGUJH5:00000002 [INF] Request finished in 3.2555ms 404  (791a596a)
+2019-02-17T20:47:06.3983322+05:30 0HLKKTBPGUJH4:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T20:47:07.0734229+05:30 0HLKKTBPGUJH4:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T20:47:07.9159578+05:30 0HLKKTBPGUJH4:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T20:47:08.7733517+05:30 0HLKKTBPGUJH4:00000005 [INF] Executed DbCommand ("49"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T20:47:08.9847402+05:30 0HLKKTBPGUJH4:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T20:47:09.0104285+05:30 0HLKKTBPGUJH4:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 2482.582ms (afa2e885)
+2019-02-17T20:47:09.0231624+05:30 0HLKKTBPGUJH4:00000005 [INF] Request finished in 2619.8019ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T20:47:43.5899131+05:30 0HLKKTBPGUJH5:00000003 [INF] Request starting HTTP/1.1 PUT http://localhost:59153/api/Test/7 application/json 45 (ca22a1cb)
+2019-02-17T20:47:43.6065849+05:30 0HLKKTBPGUJH5:00000003 [INF] Policy execution successful. (0204925d)
+2019-02-17T20:47:43.7206403+05:30 0HLKKTBPGUJH5:00000003 [INF] Executing action method "Titan.Controllers.TestController.Put (Titan)" with arguments (["7", "Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T20:47:53.0992868+05:30 0HLKKTBPGUJH5:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T20:47:53.3639939+05:30 0HLKKTBPGUJH5:00000003 [INF] Executed DbCommand ("57"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T20:49:17.1335851+05:30 0HLKKTD43TA51:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T20:49:17.4517968+05:30 0HLKKTD43TA51:00000001 [INF] Request finished in 346.6858ms 200 text/html (791a596a)
+2019-02-17T20:49:17.6398108+05:30 0HLKKTD43TA51:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T20:49:17.7294469+05:30 0HLKKTD43TA52:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T20:49:17.9103983+05:30 0HLKKTD43TA51:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T20:49:17.9150403+05:30 0HLKKTD43TA51:00000002 [INF] Request finished in 274.9032ms 200 text/plain (791a596a)
+2019-02-17T20:49:17.9329180+05:30 0HLKKTD43TA51:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T20:49:17.9817131+05:30 0HLKKTD43TA51:00000003 [INF] Request finished in 45.5728ms 404  (791a596a)
+2019-02-17T20:49:18.1499695+05:30 0HLKKTD43TA52:00000001 [INF] Request finished in 399.1434ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T20:49:20.2885189+05:30 0HLKKTD43TA51:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T20:49:20.3126837+05:30 0HLKKTD43TA51:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T20:49:20.3353133+05:30 0HLKKTD43TA51:00000004 [INF] Request finished in 26.4838ms 200 text/plain (791a596a)
+2019-02-17T20:49:20.3845048+05:30 0HLKKTD43TA52:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T20:49:20.4035658+05:30 0HLKKTD43TA52:00000002 [INF] Request finished in 49.4585ms 404  (791a596a)
+2019-02-17T20:49:43.1049890+05:30 0HLKKTD43TA51:00000005 [INF] Request starting HTTP/1.1 PUT http://localhost:59153/api/Test/7 application/json 48 (ca22a1cb)
+2019-02-17T20:49:43.1205276+05:30 0HLKKTD43TA51:00000005 [INF] Policy execution successful. (0204925d)
+2019-02-17T20:49:43.7136826+05:30 0HLKKTD43TA51:00000005 [INF] Executing action method "Titan.Controllers.TestController.Put (Titan)" with arguments (["7", "Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T20:49:47.4255871+05:30 0HLKKTD43TA51:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T20:49:48.9737099+05:30 0HLKKTD43TA51:00000005 [INF] Executed DbCommand ("116"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [TestEntitys] SET [TestEntityName] = @p0
+WHERE [TestEntityId] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2019-02-17T20:49:51.9762442+05:30 0HLKKTD43TA51:00000005 [INF] Executed action "Titan.Controllers.TestController.Put (Titan)" in 8762.5927ms (afa2e885)
+2019-02-17T20:49:53.9934007+05:30 0HLKKTD43TA51:00000005 [INF] Request finished in 10872.9799ms 200  (791a596a)
+2019-02-17T20:50:01.5960583+05:30 0HLKKTD43TA52:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T20:50:03.2678052+05:30 0HLKKTD43TA52:00000003 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T20:50:03.2795354+05:30 0HLKKTD43TA52:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T20:50:03.6724716+05:30 0HLKKTD43TA52:00000003 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T20:50:03.7603154+05:30 0HLKKTD43TA52:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T20:50:03.7677684+05:30 0HLKKTD43TA52:00000003 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 528.3115ms (afa2e885)
+2019-02-17T20:50:03.7713955+05:30 0HLKKTD43TA52:00000003 [INF] Request finished in 2175.5844ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T22:32:15.3143099+05:30 0HLKKV6LANPDO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T22:32:15.7446567+05:30 0HLKKV6LANPDO:00000001 [INF] Request finished in 529.5379ms 200 text/html (791a596a)
+2019-02-17T22:32:15.9131656+05:30 0HLKKV6LANPDO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T22:32:16.0020047+05:30 0HLKKV6LANPDP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T22:32:16.2313914+05:30 0HLKKV6LANPDO:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T22:32:16.2534118+05:30 0HLKKV6LANPDO:00000002 [INF] Request finished in 320.9986ms 200 text/plain (791a596a)
+2019-02-17T22:32:16.2609241+05:30 0HLKKV6LANPDO:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T22:32:16.3374046+05:30 0HLKKV6LANPDO:00000003 [INF] Request finished in 70.1793ms 404  (791a596a)
+2019-02-17T22:32:16.5219161+05:30 0HLKKV6LANPDP:00000001 [INF] Request finished in 513.1898ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T22:32:19.0205752+05:30 0HLKKV6LANPDO:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T22:32:19.0522100+05:30 0HLKKV6LANPDO:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T22:32:19.0574475+05:30 0HLKKV6LANPDO:00000004 [INF] Request finished in 34.2446ms 200 text/plain (791a596a)
+2019-02-17T22:32:19.0731159+05:30 0HLKKV6LANPDP:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T22:32:19.1305546+05:30 0HLKKV6LANPDP:00000002 [INF] Request finished in 4.2202ms 404  (791a596a)
+2019-02-17T22:32:29.1181870+05:30 0HLKKV6LANPDO:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T22:32:29.5834702+05:30 0HLKKV6LANPDO:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T22:32:30.3688808+05:30 0HLKKV6LANPDO:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T22:32:31.4241859+05:30 0HLKKV6LANPDO:00000005 [INF] Executed DbCommand ("107"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T22:32:31.6037421+05:30 0HLKKV6LANPDO:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T22:32:31.6256825+05:30 0HLKKV6LANPDO:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 2407.2754ms (afa2e885)
+2019-02-17T22:32:31.6313466+05:30 0HLKKV6LANPDO:00000005 [INF] Request finished in 2513.0573ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T22:32:39.4940583+05:30 0HLKKV6LANPDP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/7   (ca22a1cb)
+2019-02-17T22:32:39.5473591+05:30 0HLKKV6LANPDP:00000003 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["7"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T22:32:39.5539082+05:30 0HLKKV6LANPDP:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T22:32:39.8722619+05:30 0HLKKV6LANPDP:00000003 [INF] Executed DbCommand ("56"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T22:32:43.7871119+05:30 0HLKKV6LANPDP:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T22:32:43.8137433+05:30 0HLKKV6LANPDP:00000003 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 4270.5097ms (afa2e885)
+2019-02-17T22:32:43.8282780+05:30 0HLKKV6LANPDP:00000003 [INF] Request finished in 4322.5841ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T22:32:50.9928812+05:30 0HLKKV6LANPDO:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/10   (ca22a1cb)
+2019-02-17T22:32:50.9980102+05:30 0HLKKV6LANPDO:00000006 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["10"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T22:32:51.0252168+05:30 0HLKKV6LANPDO:00000006 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T22:32:51.0415879+05:30 0HLKKV6LANPDO:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T22:32:51.0443696+05:30 0HLKKV6LANPDO:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T22:32:51.0507858+05:30 0HLKKV6LANPDO:00000006 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 50.8242ms (afa2e885)
+2019-02-17T22:32:51.0594864+05:30 0HLKKV6LANPDO:00000006 [INF] Request finished in 61.7434ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T22:33:00.5089168+05:30 0HLKKV6LANPDP:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/10   (ca22a1cb)
+2019-02-17T22:33:00.5129936+05:30 0HLKKV6LANPDP:00000004 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["10"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T22:33:00.5165126+05:30 0HLKKV6LANPDP:00000004 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T22:33:00.5220955+05:30 0HLKKV6LANPDP:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T22:33:00.5256966+05:30 0HLKKV6LANPDP:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T22:33:00.5330567+05:30 0HLKKV6LANPDP:00000004 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 20.1137ms (afa2e885)
+2019-02-17T22:33:00.5426775+05:30 0HLKKV6LANPDP:00000004 [INF] Request finished in 27.7925ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T22:33:01.3998300+05:30 0HLKKV6LANPDO:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/10   (ca22a1cb)
+2019-02-17T22:33:01.4027978+05:30 0HLKKV6LANPDO:00000007 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["10"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T22:33:01.4064916+05:30 0HLKKV6LANPDO:00000007 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T22:33:01.4133625+05:30 0HLKKV6LANPDO:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T22:33:01.4363821+05:30 0HLKKV6LANPDO:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T22:33:01.4430535+05:30 0HLKKV6LANPDO:00000007 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 38.7103ms (afa2e885)
+2019-02-17T22:33:01.4468346+05:30 0HLKKV6LANPDO:00000007 [INF] Request finished in 46.4292ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T22:33:09.4712751+05:30 0HLKKV6LANPDP:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/10   (ca22a1cb)
+2019-02-17T22:33:09.4742221+05:30 0HLKKV6LANPDP:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["10"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T22:33:09.4780353+05:30 0HLKKV6LANPDP:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T22:33:09.4848532+05:30 0HLKKV6LANPDP:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T22:33:09.5087499+05:30 0HLKKV6LANPDP:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T22:33:09.5116532+05:30 0HLKKV6LANPDP:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 37.4325ms (afa2e885)
+2019-02-17T22:33:09.5151205+05:30 0HLKKV6LANPDP:00000005 [INF] Request finished in 43.1797ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T22:35:00.7874607+05:30 0HLKKV86LPAOK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T22:35:01.2157674+05:30 0HLKKV86LPAOK:00000001 [INF] Request finished in 478.7231ms 200 text/html (791a596a)
+2019-02-17T22:35:01.3916698+05:30 0HLKKV86LPAOK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T22:35:01.4774519+05:30 0HLKKV86LPAOM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T22:35:01.5893993+05:30 0HLKKV86LPAOK:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T22:35:01.5935515+05:30 0HLKKV86LPAOK:00000002 [INF] Request finished in 200.7709ms 200 text/plain (791a596a)
+2019-02-17T22:35:01.6019531+05:30 0HLKKV86LPAOK:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T22:35:01.6668577+05:30 0HLKKV86LPAOK:00000003 [INF] Request finished in 59.3073ms 404  (791a596a)
+2019-02-17T22:35:01.8603999+05:30 0HLKKV86LPAOM:00000001 [INF] Request finished in 366.7602ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T22:35:04.1824467+05:30 0HLKKV86LPAOK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T22:35:04.2052721+05:30 0HLKKV86LPAOK:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T22:35:04.2085907+05:30 0HLKKV86LPAOK:00000004 [INF] Request finished in 24.8984ms 200 text/plain (791a596a)
+2019-02-17T22:35:04.2344297+05:30 0HLKKV86LPAOM:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T22:35:04.2413062+05:30 0HLKKV86LPAOM:00000002 [INF] Request finished in 3.0508ms 404  (791a596a)
+2019-02-17T22:35:15.7640254+05:30 0HLKKV86LPAOK:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/1   (ca22a1cb)
+2019-02-17T22:35:16.2494630+05:30 0HLKKV86LPAOK:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T22:35:20.2555618+05:30 0HLKKV86LPAOK:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T22:35:21.4555205+05:30 0HLKKV86LPAOK:00000005 [INF] Executed DbCommand ("133"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T22:35:27.8762129+05:30 0HLKKV86LPAOK:00000005 [ERR] No data found (56913bd6)
+Titan.Middleware.MiddlewareModel.NotFoundCustomException: No data found
+   at Titan.Controllers.TestController.<Get>d__4.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 58
+2019-02-17T22:35:27.9064829+05:30 0HLKKV86LPAOK:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T22:35:27.9202547+05:30 0HLKKV86LPAOK:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 12034.2979ms (afa2e885)
+2019-02-17T22:35:27.9313216+05:30 0HLKKV86LPAOK:00000005 [INF] Request finished in 12166.5549ms 204  (791a596a)
+2019-02-17T22:35:58.9730759+05:30 0HLKKV86LPAOM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T22:35:58.9889815+05:30 0HLKKV86LPAOM:00000003 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T22:35:58.9980095+05:30 0HLKKV86LPAOM:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T22:35:59.0902924+05:30 0HLKKV86LPAOM:00000003 [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T22:35:59.2094161+05:30 0HLKKV86LPAOM:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T22:35:59.2203395+05:30 0HLKKV86LPAOM:00000003 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 231.4659ms (afa2e885)
+2019-02-17T22:35:59.2242724+05:30 0HLKKV86LPAOM:00000003 [INF] Request finished in 250.5575ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T22:36:04.2631187+05:30 0HLKKV86LPAOK:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/1   (ca22a1cb)
+2019-02-17T22:36:04.2671697+05:30 0HLKKV86LPAOK:00000006 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T22:36:06.6091686+05:30 0HLKKV86LPAOK:00000006 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T22:36:06.6225645+05:30 0HLKKV86LPAOK:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T22:36:54.9217990+05:30 0HLKKV86LPAOK:00000006 [ERR] No data found (56913bd6)
+Titan.Middleware.MiddlewareModel.NotFoundCustomException: No data found
+   at Titan.Controllers.TestController.<Get>d__4.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 58
+2019-02-17T22:36:54.9299041+05:30 0HLKKV86LPAOK:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T22:36:54.9404915+05:30 0HLKKV86LPAOK:00000006 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 50666.1836ms (afa2e885)
+2019-02-17T22:36:54.9509090+05:30 0HLKKV86LPAOK:00000006 [INF] Request finished in 50680.4021ms 204  (791a596a)
+2019-02-17T22:38:09.1751345+05:30 0HLKKV9UQ206S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T22:38:09.4958907+05:30 0HLKKV9UQ206S:00000001 [INF] Request finished in 384.0889ms 200 text/html (791a596a)
+2019-02-17T22:38:09.7071739+05:30 0HLKKV9UQ206S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T22:38:09.7920627+05:30 0HLKKV9UQ206U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T22:38:10.0454408+05:30 0HLKKV9UQ206S:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T22:38:10.0499537+05:30 0HLKKV9UQ206S:00000002 [INF] Request finished in 353.3905ms 200 text/plain (791a596a)
+2019-02-17T22:38:10.1398107+05:30 0HLKKV9UQ206S:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T22:38:10.1880401+05:30 0HLKKV9UQ206S:00000003 [INF] Request finished in 45.7657ms 404  (791a596a)
+2019-02-17T22:38:10.2935924+05:30 0HLKKV9UQ206U:00000001 [INF] Request finished in 490.7037ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T22:38:13.0288378+05:30 0HLKKV9UQ206S:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T22:38:13.0630248+05:30 0HLKKV9UQ206S:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T22:38:13.0653710+05:30 0HLKKV9UQ206S:00000004 [INF] Request finished in 36.2968ms 200 text/plain (791a596a)
+2019-02-17T22:38:13.0777496+05:30 0HLKKV9UQ206U:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T22:38:13.0819547+05:30 0HLKKV9UQ206U:00000002 [INF] Request finished in 3.721ms 404  (791a596a)
+2019-02-17T22:38:18.3795283+05:30 0HLKKV9UQ206S:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/2   (ca22a1cb)
+2019-02-17T22:38:19.1100656+05:30 0HLKKV9UQ206S:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["2"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T22:38:24.1670278+05:30 0HLKKV9UQ206S:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T22:38:25.2699094+05:30 0HLKKV9UQ206S:00000005 [INF] Executed DbCommand ("92"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T22:38:28.2083849+05:30 0HLKKV9UQ206S:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T22:38:30.3327630+05:30 0HLKKV9UQ206S:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 11776.4001ms (afa2e885)
+2019-02-17T22:38:30.3401681+05:30 0HLKKV9UQ206S:00000005 [INF] Request finished in 11962.863ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T22:38:38.9878253+05:30 0HLKKV9UQ206U:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/25   (ca22a1cb)
+2019-02-17T22:38:38.9946052+05:30 0HLKKV9UQ206U:00000003 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["25"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T22:38:41.6102750+05:30 0HLKKV9UQ206U:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T22:38:41.6321916+05:30 0HLKKV9UQ206U:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T22:38:50.2250645+05:30 0HLKKV9UQ206U:00000003 [ERR] No data found (56913bd6)
+Titan.Middleware.MiddlewareModel.NotFoundCustomException: No data found
+   at Titan.Controllers.TestController.<Get>d__4.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 58
+2019-02-17T22:38:53.2823477+05:30 0HLKKV9UQ206U:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T22:38:53.2887084+05:30 0HLKKV9UQ206U:00000003 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 14293.9257ms (afa2e885)
+2019-02-17T22:38:53.3185735+05:30 0HLKKV9UQ206U:00000003 [INF] Request finished in 14305.1085ms 204  (791a596a)
+2019-02-17T22:59:46.8376344+05:30 0HLKKVM1HGR9L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T22:59:47.2680408+05:30 0HLKKVM1HGR9L:00000001 [INF] Request finished in 492.8061ms 200 text/html (791a596a)
+2019-02-17T22:59:47.4631144+05:30 0HLKKVM1HGR9L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T22:59:47.5858229+05:30 0HLKKVM1HGR9M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T22:59:47.7894188+05:30 0HLKKVM1HGR9L:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T22:59:47.8126291+05:30 0HLKKVM1HGR9L:00000002 [INF] Request finished in 329.9397ms 200 text/plain (791a596a)
+2019-02-17T22:59:47.8406426+05:30 0HLKKVM1HGR9L:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T22:59:47.8912301+05:30 0HLKKVM1HGR9L:00000003 [INF] Request finished in 50.2208ms 404  (791a596a)
+2019-02-17T22:59:48.0989511+05:30 0HLKKVM1HGR9M:00000001 [INF] Request finished in 518.4366ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T22:59:50.9892130+05:30 0HLKKVM1HGR9L:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T22:59:51.0179159+05:30 0HLKKVM1HGR9L:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T22:59:51.0218544+05:30 0HLKKVM1HGR9L:00000004 [INF] Request finished in 31.9882ms 200 text/plain (791a596a)
+2019-02-17T22:59:51.0474559+05:30 0HLKKVM1HGR9M:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T22:59:51.0523286+05:30 0HLKKVM1HGR9M:00000002 [INF] Request finished in 3.2207ms 404  (791a596a)
+2019-02-17T22:59:57.4344424+05:30 0HLKKVM1HGR9L:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/20   (ca22a1cb)
+2019-02-17T22:59:58.1790039+05:30 0HLKKVM1HGR9L:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["20"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:00:07.9573169+05:30 0HLKKVM1HGR9L:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:00:09.4352101+05:30 0HLKKVM1HGR9L:00000005 [INF] Executed DbCommand ("123"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T23:00:17.5989110+05:30 0HLKKVM1HGR9L:00000005 [ERR] Object reference not set to an instance of an object. (f59a5554)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Titan.Controllers.TestController.<Get>d__4.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 60
+2019-02-17T23:00:19.0298536+05:30 0HLKKVM1HGR9L:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 21467.6366ms (afa2e885)
+2019-02-17T23:00:22.7419098+05:30 0HLKKVM1HGR9L:00000005 [INF] Request finished in 25291.0119ms 404 application/json (791a596a)
+2019-02-17T23:04:10.3354118+05:30 0HLKKVOG2DP8D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T23:04:10.7322641+05:30 0HLKKVOG2DP8D:00000001 [INF] Request finished in 453.5392ms 200 text/html (791a596a)
+2019-02-17T23:04:10.8784509+05:30 0HLKKVOG2DP8D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T23:04:11.0128605+05:30 0HLKKVOG2DP8F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T23:04:11.1502802+05:30 0HLKKVOG2DP8D:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:04:11.1840665+05:30 0HLKKVOG2DP8D:00000002 [INF] Request finished in 277.7467ms 200 text/plain (791a596a)
+2019-02-17T23:04:11.2423631+05:30 0HLKKVOG2DP8D:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:04:11.3375205+05:30 0HLKKVOG2DP8D:00000003 [INF] Request finished in 95.5075ms 404  (791a596a)
+2019-02-17T23:04:11.5168091+05:30 0HLKKVOG2DP8F:00000001 [INF] Request finished in 500.6598ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T23:04:13.5988384+05:30 0HLKKVOG2DP8D:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T23:04:13.6251925+05:30 0HLKKVOG2DP8D:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:04:13.6278899+05:30 0HLKKVOG2DP8D:00000004 [INF] Request finished in 28.6477ms 200 text/plain (791a596a)
+2019-02-17T23:04:13.6525221+05:30 0HLKKVOG2DP8F:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:04:13.6608216+05:30 0HLKKVOG2DP8F:00000002 [INF] Request finished in 3.0044ms 404  (791a596a)
+2019-02-17T23:04:20.8888664+05:30 0HLKKVOG2DP8D:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/7   (ca22a1cb)
+2019-02-17T23:04:21.4297650+05:30 0HLKKVOG2DP8D:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["7"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:04:24.7307379+05:30 0HLKKVOG2DP8D:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:04:26.1495084+05:30 0HLKKVOG2DP8D:00000005 [INF] Executed DbCommand ("149"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T23:04:26.7378885+05:30 0HLKKVOG2DP8D:00000005 [ERR] 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+===============================================
+AutoMapper created this type map for you, but your types cannot be mapped using the current configuration.
+TestEntity -> TestDto (Destination member list)
+Titan.Entity.TestEntity -> Titan.Model.TestDto (Destination member list)
+
+Unmapped properties:
+Message
+StatusCode
+ (5b7da4ca)
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+===============================================
+AutoMapper created this type map for you, but your types cannot be mapped using the current configuration.
+TestEntity -> TestDto (Destination member list)
+Titan.Entity.TestEntity -> Titan.Model.TestDto (Destination member list)
+
+Unmapped properties:
+Message
+StatusCode
+
+   at Titan.Service.TestService.<GetById>d__7.MoveNext() in D:\Titan\Titan.BusinessLogic\TestService.cs:line 104
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Titan.Controllers.TestController.<Get>d__4.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 51
+2019-02-17T23:04:26.8032870+05:30 0HLKKVOG2DP8D:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 5795.7209ms (afa2e885)
+2019-02-17T23:04:26.8375826+05:30 0HLKKVOG2DP8D:00000005 [INF] Request finished in 5950.9802ms 404 application/json (791a596a)
+2019-02-17T23:04:41.3889259+05:30 0HLKKVOG2DP8F:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T23:04:41.3985610+05:30 0HLKKVOG2DP8F:00000003 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:04:41.4130642+05:30 0HLKKVOG2DP8F:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:04:41.4571804+05:30 0HLKKVOG2DP8F:00000003 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T23:04:41.5304382+05:30 0HLKKVOG2DP8F:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:04:41.5333150+05:30 0HLKKVOG2DP8F:00000003 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 136.4236ms (afa2e885)
+2019-02-17T23:04:41.5887654+05:30 0HLKKVOG2DP8F:00000003 [INF] Request finished in 198.0931ms 204  (791a596a)
+2019-02-17T23:04:46.4288256+05:30 0HLKKVOG2DP8D:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T23:04:46.4321139+05:30 0HLKKVOG2DP8D:00000006 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:04:46.4374635+05:30 0HLKKVOG2DP8D:00000006 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:04:46.4457926+05:30 0HLKKVOG2DP8D:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T23:04:46.5146122+05:30 0HLKKVOG2DP8D:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:04:46.5170990+05:30 0HLKKVOG2DP8D:00000006 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 85.5676ms (afa2e885)
+2019-02-17T23:04:46.5429845+05:30 0HLKKVOG2DP8D:00000006 [INF] Request finished in 92.4343ms 204  (791a596a)
+2019-02-17T23:04:57.6588643+05:30 0HLKKVOG2DP8F:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T23:04:57.6617260+05:30 0HLKKVOG2DP8F:00000004 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:04:57.6654667+05:30 0HLKKVOG2DP8F:00000004 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:04:57.6696367+05:30 0HLKKVOG2DP8F:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T23:04:57.7283822+05:30 0HLKKVOG2DP8F:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:04:57.7514032+05:30 0HLKKVOG2DP8F:00000004 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 69.3498ms (afa2e885)
+2019-02-17T23:04:57.7561657+05:30 0HLKKVOG2DP8F:00000004 [INF] Request finished in 96.044ms 204  (791a596a)
+2019-02-17T23:04:58.3386658+05:30 0HLKKVOG2DP8D:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T23:04:58.3420270+05:30 0HLKKVOG2DP8D:00000007 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:04:58.3456529+05:30 0HLKKVOG2DP8D:00000007 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:04:58.3498512+05:30 0HLKKVOG2DP8D:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T23:04:58.4103880+05:30 0HLKKVOG2DP8D:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:04:58.4329020+05:30 0HLKKVOG2DP8D:00000007 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 70.9243ms (afa2e885)
+2019-02-17T23:04:58.4385619+05:30 0HLKKVOG2DP8D:00000007 [INF] Request finished in 97.6468ms 204  (791a596a)
+2019-02-17T23:05:06.7089417+05:30 0HLKKVOG2DP8F:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T23:05:06.7122554+05:30 0HLKKVOG2DP8F:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:05:06.7158507+05:30 0HLKKVOG2DP8F:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:05:06.7206448+05:30 0HLKKVOG2DP8F:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T23:05:06.7748832+05:30 0HLKKVOG2DP8F:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:05:06.7969750+05:30 0HLKKVOG2DP8F:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 65.6627ms (afa2e885)
+2019-02-17T23:05:06.8196774+05:30 0HLKKVOG2DP8F:00000005 [INF] Request finished in 90.6472ms 204  (791a596a)
+2019-02-17T23:05:58.3168888+05:30 0HLKKVPG7T62M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T23:05:58.6736444+05:30 0HLKKVPG7T62M:00000001 [INF] Request finished in 420.937ms 200 text/html (791a596a)
+2019-02-17T23:05:58.9309059+05:30 0HLKKVPG7T62M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T23:05:59.0235291+05:30 0HLKKVPG7T62O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T23:05:59.2529723+05:30 0HLKKVPG7T62M:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:05:59.2651213+05:30 0HLKKVPG7T62M:00000002 [INF] Request finished in 328.9312ms 200 text/plain (791a596a)
+2019-02-17T23:05:59.2929305+05:30 0HLKKVPG7T62M:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:05:59.3474985+05:30 0HLKKVPG7T62M:00000003 [INF] Request finished in 50.9367ms 404  (791a596a)
+2019-02-17T23:05:59.6037025+05:30 0HLKKVPG7T62O:00000001 [INF] Request finished in 572.8551ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T23:06:02.3269683+05:30 0HLKKVPG7T62M:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T23:06:02.3649820+05:30 0HLKKVPG7T62M:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:06:02.3687525+05:30 0HLKKVPG7T62M:00000004 [INF] Request finished in 41.6361ms 200 text/plain (791a596a)
+2019-02-17T23:06:02.4019241+05:30 0HLKKVPG7T62O:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:06:02.4258925+05:30 0HLKKVPG7T62O:00000002 [INF] Request finished in 12.735ms 404  (791a596a)
+2019-02-17T23:06:03.3286855+05:30 0HLKKVPG7T62M:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T23:06:04.0506846+05:30 0HLKKVPG7T62M:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:06:05.0229261+05:30 0HLKKVPG7T62M:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:06:06.2069516+05:30 0HLKKVPG7T62M:00000005 [INF] Executed DbCommand ("71"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T23:06:06.5323540+05:30 0HLKKVPG7T62M:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:06:06.5523775+05:30 0HLKKVPG7T62M:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 3111.0475ms (afa2e885)
+2019-02-17T23:06:06.5948565+05:30 0HLKKVPG7T62M:00000005 [INF] Request finished in 3260.1235ms 204  (791a596a)
+2019-02-17T23:07:09.9939675+05:30 0HLKKVQ5JP5QF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T23:07:10.4232008+05:30 0HLKKVQ5JP5QF:00000001 [INF] Request finished in 477.6968ms 200 text/html (791a596a)
+2019-02-17T23:07:10.6411890+05:30 0HLKKVQ5JP5QF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T23:07:10.7382288+05:30 0HLKKVQ5JP5QH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T23:07:10.9941117+05:30 0HLKKVQ5JP5QF:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:07:10.9977636+05:30 0HLKKVQ5JP5QF:00000002 [INF] Request finished in 355.3868ms 200 text/plain (791a596a)
+2019-02-17T23:07:11.0063249+05:30 0HLKKVQ5JP5QF:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:07:11.0707591+05:30 0HLKKVQ5JP5QF:00000003 [INF] Request finished in 58.2629ms 404  (791a596a)
+2019-02-17T23:07:11.2155820+05:30 0HLKKVQ5JP5QH:00000001 [INF] Request finished in 460.2413ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T23:07:13.6876884+05:30 0HLKKVQ5JP5QF:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T23:07:13.7252868+05:30 0HLKKVQ5JP5QF:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:07:13.7283157+05:30 0HLKKVQ5JP5QF:00000004 [INF] Request finished in 40.3093ms 200 text/plain (791a596a)
+2019-02-17T23:07:13.7409745+05:30 0HLKKVQ5JP5QH:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:07:13.7587363+05:30 0HLKKVQ5JP5QH:00000002 [INF] Request finished in 3.0214ms 404  (791a596a)
+2019-02-17T23:07:51.9793313+05:30 0HLKKVQ5JP5QF:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T23:07:52.4031025+05:30 0HLKKVQ5JP5QF:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:08:00.2979006+05:30 0HLKKVQ5JP5QF:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:08:05.0684570+05:30 0HLKKVQ5JP5QF:00000005 [INF] Executed DbCommand ("53"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T23:10:28.4393911+05:30 0HLKKVS0OGG6M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T23:10:28.8386534+05:30 0HLKKVS0OGG6M:00000001 [INF] Request finished in 436.2294ms 200 text/html (791a596a)
+2019-02-17T23:10:29.1148265+05:30 0HLKKVS0OGG6M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T23:10:29.1770443+05:30 0HLKKVS0OGG6O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T23:10:29.4286183+05:30 0HLKKVS0OGG6M:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:10:29.4325591+05:30 0HLKKVS0OGG6M:00000002 [INF] Request finished in 317.6816ms 200 text/plain (791a596a)
+2019-02-17T23:10:29.4414096+05:30 0HLKKVS0OGG6M:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:10:29.5018860+05:30 0HLKKVS0OGG6M:00000003 [INF] Request finished in 60.9992ms 404  (791a596a)
+2019-02-17T23:10:29.6448976+05:30 0HLKKVS0OGG6O:00000001 [INF] Request finished in 448.0786ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T23:10:31.8649131+05:30 0HLKKVS0OGG6M:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T23:10:31.8957130+05:30 0HLKKVS0OGG6M:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:10:31.9023921+05:30 0HLKKVS0OGG6M:00000004 [INF] Request finished in 33.6273ms 200 text/plain (791a596a)
+2019-02-17T23:10:31.9420241+05:30 0HLKKVS0OGG6O:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:10:31.9482757+05:30 0HLKKVS0OGG6O:00000002 [INF] Request finished in 17.2535ms 404  (791a596a)
+2019-02-17T23:10:33.4470397+05:30 0HLKKVS0OGG6M:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T23:10:34.0781423+05:30 0HLKKVS0OGG6M:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:10:42.1019628+05:30 0HLKKVS0OGG6M:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:10:43.0412319+05:30 0HLKKVS0OGG6M:00000005 [INF] Executed DbCommand ("88"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T23:10:43.2365415+05:30 0HLKKVS0OGG6M:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:10:43.2592005+05:30 0HLKKVS0OGG6M:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 9696.4391ms (afa2e885)
+2019-02-17T23:10:43.2658791+05:30 0HLKKVS0OGG6M:00000005 [INF] Request finished in 9818.2681ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T23:10:54.1908252+05:30 0HLKKVS0OGG6O:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/7   (ca22a1cb)
+2019-02-17T23:10:54.2589313+05:30 0HLKKVS0OGG6O:00000003 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["7"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:10:57.2259957+05:30 0HLKKVS0OGG6O:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:10:57.4784884+05:30 0HLKKVS0OGG6O:00000003 [INF] Executed DbCommand ("60"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T23:11:00.1357501+05:30 0HLKKVS0OGG6O:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:11:00.8556812+05:30 0HLKKVS0OGG6O:00000003 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 6630.2066ms (afa2e885)
+2019-02-17T23:11:03.7231784+05:30 0HLKKVS0OGG6O:00000003 [INF] Request finished in 9518.0745ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T23:11:11.5711878+05:30 0HLKKVS0OGG6M:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/20   (ca22a1cb)
+2019-02-17T23:11:11.5754507+05:30 0HLKKVS0OGG6M:00000006 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["20"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:11:14.5852848+05:30 0HLKKVS0OGG6M:00000006 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:11:14.5984378+05:30 0HLKKVS0OGG6M:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T23:11:18.7934533+05:30 0HLKKVS0OGG6M:00000006 [ERR] No data found (56913bd6)
+Titan.Middleware.MiddlewareModel.NotFoundCustomException: No data found
+   at Titan.Controllers.TestController.<Get>d__4.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 59
+2019-02-17T23:11:20.0786482+05:30 0HLKKVS0OGG6M:00000006 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 8504.647ms (afa2e885)
+2019-02-17T23:11:25.8596866+05:30 0HLKKVS0OGG6M:00000006 [INF] Request finished in 14285.2311ms 404 application/json (791a596a)
+2019-02-17T23:11:46.4348223+05:30 0HLKKVS0OGG6O:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/20   (ca22a1cb)
+2019-02-17T23:11:46.4380162+05:30 0HLKKVS0OGG6O:00000004 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["20"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:11:52.7047042+05:30 0HLKKVS0OGG6O:00000004 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:11:52.7108450+05:30 0HLKKVS0OGG6O:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T23:12:28.6962165+05:30 0HLKKVS0OGG6O:00000004 [ERR] No data found (56913bd6)
+Titan.Middleware.MiddlewareModel.NotFoundCustomException: No data found
+   at Titan.Controllers.TestController.<Get>d__4.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 59
+2019-02-17T23:12:39.2716168+05:30 0HLKKVS0OGG6O:00000004 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 52834.4603ms (afa2e885)
+2019-02-17T23:12:44.2762845+05:30 0HLKKVS0OGG6O:00000004 [INF] Request finished in 57818.3535ms 404 application/json (791a596a)
+2019-02-17T23:13:01.6251638+05:30 0HLKKVS0OGG6O:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/7   (ca22a1cb)
+2019-02-17T23:13:01.6281644+05:30 0HLKKVS0OGG6O:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["7"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:13:03.1085674+05:30 0HLKKVS0OGG6O:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:13:03.1142258+05:30 0HLKKVS0OGG6O:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T23:13:03.1184185+05:30 0HLKKVS0OGG6O:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:13:03.1227210+05:30 0HLKKVS0OGG6O:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 1493.1293ms (afa2e885)
+2019-02-17T23:13:03.1633875+05:30 0HLKKVS0OGG6O:00000005 [INF] Request finished in 1531.8914ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T23:17:04.8292989+05:30 0HLKKVS0OGG6P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/21   (ca22a1cb)
+2019-02-17T23:17:04.8331246+05:30 0HLKKVS0OGG6P:00000001 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["21"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:17:06.1401886+05:30 0HLKKVS0OGG6P:00000001 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:17:06.4381915+05:30 0HLKKVS0OGG6P:00000001 [INF] Executed DbCommand ("20"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T23:17:06.4953247+05:30 0HLKKVS0OGG6P:00000001 [ERR] No data found (56913bd6)
+Titan.Middleware.MiddlewareModel.NotFoundCustomException: No data found
+   at Titan.Controllers.TestController.<Get>d__4.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 59
+2019-02-17T23:17:06.5520376+05:30 0HLKKVS0OGG6P:00000001 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 1720.0296ms (afa2e885)
+2019-02-17T23:17:06.5757867+05:30 0HLKKVS0OGG6P:00000001 [INF] Request finished in 1748.1269ms 404 application/json (791a596a)
+2019-02-17T23:19:09.6101043+05:30 0HLKKVS0OGG6Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/7   (ca22a1cb)
+2019-02-17T23:19:09.6141633+05:30 0HLKKVS0OGG6Q:00000001 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["7"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:19:11.2490364+05:30 0HLKKVS0OGG6Q:00000001 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:19:11.2554006+05:30 0HLKKVS0OGG6Q:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T23:19:11.2577253+05:30 0HLKKVS0OGG6Q:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:19:11.2617737+05:30 0HLKKVS0OGG6Q:00000001 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 1647.3261ms (afa2e885)
+2019-02-17T23:19:11.2696958+05:30 0HLKKVS0OGG6Q:00000001 [INF] Request finished in 1655.9273ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T23:22:36.3720616+05:30 0HLKL02PME0G8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T23:22:36.7088537+05:30 0HLKL02PME0G8:00000001 [INF] Request finished in 374.8016ms 200 text/html (791a596a)
+2019-02-17T23:22:36.8974016+05:30 0HLKL02PME0G8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T23:22:36.9930801+05:30 0HLKL02PME0G9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T23:22:37.1670236+05:30 0HLKL02PME0G8:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:22:37.1705291+05:30 0HLKL02PME0G8:00000002 [INF] Request finished in 274.6136ms 200 text/plain (791a596a)
+2019-02-17T23:22:37.2013774+05:30 0HLKL02PME0G8:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:22:37.2696705+05:30 0HLKL02PME0G8:00000003 [INF] Request finished in 57.6305ms 404  (791a596a)
+2019-02-17T23:22:37.4448342+05:30 0HLKL02PME0G9:00000001 [INF] Request finished in 452.3816ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T23:22:39.5126711+05:30 0HLKL02PME0G8:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T23:22:39.5487199+05:30 0HLKL02PME0G8:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:22:39.5529375+05:30 0HLKL02PME0G8:00000004 [INF] Request finished in 38.9285ms 200 text/plain (791a596a)
+2019-02-17T23:22:39.5550768+05:30 0HLKL02PME0G9:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:22:39.5685553+05:30 0HLKL02PME0G9:00000002 [INF] Request finished in 10.1535ms 404  (791a596a)
+2019-02-17T23:22:46.4515340+05:30 0HLKL02PME0G8:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test/20   (ca22a1cb)
+2019-02-17T23:22:47.1596019+05:30 0HLKL02PME0G8:00000005 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (["20"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:22:50.2595354+05:30 0HLKL02PME0G8:00000005 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:22:51.4506396+05:30 0HLKL02PME0G8:00000005 [INF] Executed DbCommand ("130"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[TestEntityId], [e].[TestEntityName]
+FROM [TestEntitys] AS [e]
+WHERE [e].[TestEntityId] = @__p_0" (0723d8ff)
+2019-02-17T23:22:51.5983275+05:30 0HLKL02PME0G8:00000005 [ERR] No data found (56913bd6)
+Titan.Middleware.MiddlewareModel.NotFoundCustomException: No data found
+   at Titan.Controllers.TestController.<Get>d__4.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 59
+2019-02-17T23:22:51.6759687+05:30 0HLKL02PME0G8:00000005 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 5066.5561ms (afa2e885)
+2019-02-17T23:22:51.7346727+05:30 0HLKL02PME0G8:00000005 [INF] Request finished in 5283.8118ms 404 application/json (791a596a)
+2019-02-17T23:23:21.5941473+05:30 0HLKL02PME0G9:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T23:23:21.6052268+05:30 0HLKL02PME0G9:00000003 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:23:23.8575503+05:30 0HLKL02PME0G9:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:23:23.9335788+05:30 0HLKL02PME0G9:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T23:23:24.0677423+05:30 0HLKL02PME0G9:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:23:24.0790269+05:30 0HLKL02PME0G9:00000003 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 2472.8997ms (afa2e885)
+2019-02-17T23:23:24.0834978+05:30 0HLKL02PME0G9:00000003 [INF] Request finished in 2488.7603ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T23:41:54.7267209+05:30 0HLKL0DIT9MI3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T23:41:55.2021186+05:30 0HLKL0DIT9MI3:00000001 [INF] Request finished in 478.6649ms 200 text/html (791a596a)
+2019-02-17T23:41:55.3725351+05:30 0HLKL0DIT9MI3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T23:41:55.4512059+05:30 0HLKL0DIT9MI4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T23:41:55.6482411+05:30 0HLKL0DIT9MI3:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:41:55.6528533+05:30 0HLKL0DIT9MI3:00000002 [INF] Request finished in 278.9739ms 200 text/plain (791a596a)
+2019-02-17T23:41:55.6925328+05:30 0HLKL0DIT9MI3:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:41:55.7534025+05:30 0HLKL0DIT9MI3:00000003 [INF] Request finished in 49.6061ms 404  (791a596a)
+2019-02-17T23:41:55.9973313+05:30 0HLKL0DIT9MI4:00000001 [INF] Request finished in 532.9195ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T23:41:58.2917620+05:30 0HLKL0DIT9MI3:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T23:41:58.3159679+05:30 0HLKL0DIT9MI3:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:41:58.3190236+05:30 0HLKL0DIT9MI3:00000004 [INF] Request finished in 26.4453ms 200 text/plain (791a596a)
+2019-02-17T23:41:58.3261112+05:30 0HLKL0DIT9MI4:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:41:58.3362681+05:30 0HLKL0DIT9MI4:00000002 [INF] Request finished in 2.4871ms 404  (791a596a)
+2019-02-17T23:45:12.7911674+05:30 0HLKL0DIT9MI5:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:59153/api/Test application/json 38 (ca22a1cb)
+2019-02-17T23:45:12.8041093+05:30 0HLKL0DIT9MI5:00000001 [INF] Policy execution successful. (0204925d)
+2019-02-17T23:45:13.3678040+05:30 0HLKL0DIT9MI5:00000001 [INF] Executing action method "Titan.Controllers.TestController.Post (Titan)" with arguments (["Titan.Model.TestDto"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-17T23:46:57.3207314+05:30 0HLKL0GD36BAM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T23:46:57.7175740+05:30 0HLKL0GD36BAM:00000001 [INF] Request finished in 426.7529ms 200 text/html (791a596a)
+2019-02-17T23:46:57.8928337+05:30 0HLKL0GD36BAM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-17T23:46:58.0253176+05:30 0HLKL0GD36BAO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-17T23:46:58.2557215+05:30 0HLKL0GD36BAM:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:46:58.2601494+05:30 0HLKL0GD36BAM:00000002 [INF] Request finished in 365.2159ms 200 text/plain (791a596a)
+2019-02-17T23:46:58.2729576+05:30 0HLKL0GD36BAM:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:46:58.3507265+05:30 0HLKL0GD36BAM:00000003 [INF] Request finished in 67.591ms 404  (791a596a)
+2019-02-17T23:46:58.5398426+05:30 0HLKL0GD36BAO:00000001 [INF] Request finished in 489.9214ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-17T23:47:00.8869675+05:30 0HLKL0GD36BAM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-17T23:47:00.9127046+05:30 0HLKL0GD36BAM:00000004 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-17T23:47:00.9158189+05:30 0HLKL0GD36BAM:00000004 [INF] Request finished in 28.0459ms 200 text/plain (791a596a)
+2019-02-17T23:47:00.9326129+05:30 0HLKL0GD36BAO:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:59153/webpack.config.js   (ca22a1cb)
+2019-02-17T23:47:00.9427638+05:30 0HLKL0GD36BAO:00000002 [INF] Request finished in 3.9955ms 404  (791a596a)
+2019-02-17T23:47:21.1807657+05:30 0HLKL0GD36BAM:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:59153/api/Test application/json 38 (ca22a1cb)
+2019-02-17T23:47:21.2066877+05:30 0HLKL0GD36BAM:00000005 [INF] Policy execution successful. (0204925d)
+2019-02-17T23:47:21.7681618+05:30 0HLKL0GD36BAM:00000005 [INF] Executing action method "Titan.Controllers.TestController.Post (Titan)" with arguments (["Titan.Model.TestDto"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-17T23:47:28.4793787+05:30 0HLKL0GD36BAM:00000005 [ERR] No data save (6fab8426)
+Titan.Middleware.MiddlewareModel.NotSaveCustomException: No data save
+   at Titan.Controllers.TestController.<Post>d__5.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 83
+2019-02-17T23:47:29.1808816+05:30 0HLKL0GD36BAM:00000005 [INF] Executed action "Titan.Controllers.TestController.Post (Titan)" in 7883.8992ms (afa2e885)
+2019-02-17T23:47:31.1049006+05:30 0HLKL0GD36BAM:00000005 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Writing to the response body is invalid for responses with status code 204.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame.HandleNonBodyResponseWrite()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame.<WriteAsyncAwaited>d__199.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Titan.Middleware.CustomExceptionMiddleware.<HandleExceptionAsync>d__3.MoveNext() in D:\Titan\Titan\Middleware\CustomExceptionMiddleware.cs:line 50
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Titan.Middleware.CustomExceptionMiddleware.<Invoke>d__2.MoveNext() in D:\Titan\Titan\Middleware\CustomExceptionMiddleware.cs:line 29
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-02-17T23:47:31.1103314+05:30 0HLKL0GD36BAM:00000005 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2019-02-17T23:47:33.6061574+05:30 0HLKL0GD36BAM:00000005 [ERR] Connection id ""0HLKL0GD36BAM"", Request id ""0HLKL0GD36BAM:00000005"": An unhandled exception was thrown by the application. (560e7d32)
+System.InvalidOperationException: Writing to the response body is invalid for responses with status code 204.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame.HandleNonBodyResponseWrite()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame.<WriteAsyncAwaited>d__199.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Titan.Middleware.CustomExceptionMiddleware.<HandleExceptionAsync>d__3.MoveNext() in D:\Titan\Titan\Middleware\CustomExceptionMiddleware.cs:line 50
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Titan.Middleware.CustomExceptionMiddleware.<Invoke>d__2.MoveNext() in D:\Titan\Titan\Middleware\CustomExceptionMiddleware.cs:line 29
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+2019-02-17T23:47:33.6141769+05:30 0HLKL0GD36BAM:00000005 [INF] Request finished in 12431.8555ms 204 application/json (791a596a)
+2019-02-17T23:47:54.9871759+05:30 0HLKL0GD36BAO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T23:47:55.0062441+05:30 0HLKL0GD36BAO:00000003 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:47:57.4977900+05:30 0HLKL0GD36BAO:00000003 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:47:58.5046543+05:30 0HLKL0GD36BAO:00000003 [INF] Executed DbCommand ("86"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T23:47:58.7653794+05:30 0HLKL0GD36BAO:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:47:58.7728408+05:30 0HLKL0GD36BAO:00000003 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 3768.5491ms (afa2e885)
+2019-02-17T23:47:58.7816293+05:30 0HLKL0GD36BAO:00000003 [INF] Request finished in 3795.5993ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T23:51:43.9565609+05:30 0HLKL0GD36BAP:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:59153/api/Test application/json 50 (ca22a1cb)
+2019-02-17T23:51:43.9791384+05:30 0HLKL0GD36BAP:00000001 [INF] Policy execution successful. (0204925d)
+2019-02-17T23:51:43.9858571+05:30 0HLKL0GD36BAP:00000001 [INF] Executing action method "Titan.Controllers.TestController.Post (Titan)" with arguments (["Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:51:47.8899693+05:30 0HLKL0GD36BAP:00000001 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:51:48.2872347+05:30 0HLKL0GD36BAP:00000001 [INF] Executed DbCommand ("114"ms) [Parameters=["@p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [TestEntitys] ([TestEntityName])
+VALUES (@p0);
+SELECT [TestEntityId]
+FROM [TestEntitys]
+WHERE @@ROWCOUNT = 1 AND [TestEntityId] = scope_identity();" (0723d8ff)
+2019-02-17T23:51:50.3859305+05:30 0HLKL0GD36BAP:00000001 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2019-02-17T23:51:50.3880016+05:30 0HLKL0GD36BAP:00000001 [INF] Executed action "Titan.Controllers.TestController.Post (Titan)" in 6406.6146ms (afa2e885)
+2019-02-17T23:51:54.2488756+05:30 0HLKL0GD36BAP:00000001 [INF] Request finished in 10275.6897ms 200  (791a596a)
+2019-02-17T23:52:00.8414430+05:30 0HLKL0GD36BAP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/api/Test   (ca22a1cb)
+2019-02-17T23:52:00.8454715+05:30 0HLKL0GD36BAP:00000002 [INF] Executing action method "Titan.Controllers.TestController.Get (Titan)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-17T23:52:02.5615558+05:30 0HLKL0GD36BAP:00000002 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-17T23:52:02.5707906+05:30 0HLKL0GD36BAP:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestEntityId], [t].[TestEntityName]
+FROM [TestEntitys] AS [t]" (0723d8ff)
+2019-02-17T23:52:02.5736569+05:30 0HLKL0GD36BAP:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-17T23:52:02.5772797+05:30 0HLKL0GD36BAP:00000002 [INF] Executed action "Titan.Controllers.TestController.Get (Titan)" in 1732.4826ms (afa2e885)
+2019-02-17T23:52:02.6004447+05:30 0HLKL0GD36BAP:00000002 [INF] Request finished in 1738.9849ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-17T23:52:33.7412241+05:30 0HLKL0GD36BAP:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:59153/api/Test application/json 38 (ca22a1cb)
+2019-02-17T23:52:33.7669331+05:30 0HLKL0GD36BAP:00000003 [INF] Policy execution successful. (0204925d)
+2019-02-17T23:52:33.7711926+05:30 0HLKL0GD36BAP:00000003 [INF] Executing action method "Titan.Controllers.TestController.Post (Titan)" with arguments (["Titan.Model.TestDto"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-17T23:52:43.7530987+05:30 0HLKL0GD36BAP:00000003 [ERR] No data save (6fab8426)
+Titan.Middleware.MiddlewareModel.NotSaveCustomException: No data save
+   at Titan.Controllers.TestController.<Post>d__5.MoveNext() in D:\Titan\Titan\Controllers\TestController.cs:line 83
+2019-02-17T23:52:44.5799001+05:30 0HLKL0GD36BAP:00000003 [INF] Executed action "Titan.Controllers.TestController.Post (Titan)" in 10810.0463ms (afa2e885)
+2019-02-17T23:52:47.5779926+05:30 0HLKL0GD36BAP:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Writing to the response body is invalid for responses with status code 204.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame.HandleNonBodyResponseWrite()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame.<WriteAsyncAwaited>d__199.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Titan.Middleware.CustomExceptionMiddleware.<HandleExceptionAsync>d__3.MoveNext() in D:\Titan\Titan\Middleware\CustomExceptionMiddleware.cs:line 50
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Titan.Middleware.CustomExceptionMiddleware.<Invoke>d__2.MoveNext() in D:\Titan\Titan\Middleware\CustomExceptionMiddleware.cs:line 29
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-02-17T23:52:47.5830937+05:30 0HLKL0GD36BAP:00000003 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2019-02-17T23:52:51.4780507+05:30 0HLKL0GD36BAP:00000003 [ERR] Connection id ""0HLKL0GD36BAP"", Request id ""0HLKL0GD36BAP:00000003"": An unhandled exception was thrown by the application. (560e7d32)
+System.InvalidOperationException: Writing to the response body is invalid for responses with status code 204.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame.HandleNonBodyResponseWrite()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame.<WriteAsyncAwaited>d__199.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Titan.Middleware.CustomExceptionMiddleware.<HandleExceptionAsync>d__3.MoveNext() in D:\Titan\Titan\Middleware\CustomExceptionMiddleware.cs:line 50
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Titan.Middleware.CustomExceptionMiddleware.<Invoke>d__2.MoveNext() in D:\Titan\Titan\Middleware\CustomExceptionMiddleware.cs:line 29
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+2019-02-17T23:52:51.4802615+05:30 0HLKL0GD36BAP:00000003 [INF] Request finished in 17739.4576ms 204 application/json (791a596a)
+2019-02-17T23:59:59.4094685+05:30 0HLKL0NM5K34V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:59153/index.html   (ca22a1cb)
+2019-02-17T23:59:59.7232867+05:30 0HLKL0NM5K34V:00000001 [INF] Request finished in 380.9373ms 200 text/html (791a596a)
+2019-02-17T23:59:59.9289643+05:30 0HLKL0NM5K34V:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:59153/swagger-ui-bundle.js.map   (ca22a1cb)

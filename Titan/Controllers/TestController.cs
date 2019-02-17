@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Titan.Interface.ServiceInterface;
+using Titan.Middleware.MiddlewareModel;
 using Titan.Model;
 
 
@@ -25,17 +26,17 @@ namespace Titan.Controllers
         }
         // GET: api/<controller>
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IEnumerable<TestDto>> Get()
         {
+          
             try
             {
-                return Ok(await _testService.Get());
+                return await _testService.Get();
             }
             catch (Exception ex)
             {
                 _log.LogError(ex, ex.Message, null);
                 return null;
-
             }
 
 
@@ -43,43 +44,70 @@ namespace Titan.Controllers
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<TestDto> Get(int id)
         {
             try
             {
-                return Ok(await _testService.GetById(id));
+                TestDto obj = await _testService.GetById(id);
+                if (obj != null)
+                {
+                   
+                    return obj;
+                }
+                else
+                {
+                    throw new NotFoundCustomException("No data found", $"Please check your parameters id: {id}");
+                }
+              
             }
             catch (Exception ex)
             {
-
                 _log.LogError(ex, ex.Message, null);
-                return null;
+                throw new NotFoundCustomException("No data found", $"Please check your parameters id: {id}");
             }
         }
 
         // POST api/<controller>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody]TestDto testDto)
+        public async Task<bool> Post([FromBody]TestDto testDto)
         {
             try
             {
-                await _testService.Add(testDto);
-                return Ok();
+                if (ModelState.IsValid)
+                {
+                    if (await _testService.Add(testDto))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }   
+                }
+                else
+                {
+                    return false;
+                    throw new NotSaveCustomException("No data save", $"Please check your ented data");
+                }
+               
             }
             catch (Exception ex)
             {
                 _log.LogError(ex, ex.Message, null);
-                return null;
+                throw new NotSaveCustomException("No data save", $"Please check your ented data");
+ 
             }
         }
 
         // PUT api/<controller>/5
-        [HttpPut]
-        public void Put([FromBody]TestDto testDto)
+        [HttpPut("{id}")]
+        public async Task Put(int id ,[FromBody]TestDto testDto)
         {
             try
             {
-                _testService.Update(testDto);
+
+              await _testService.Update(testDto);
+             
             }
             catch (Exception ex)
             {
