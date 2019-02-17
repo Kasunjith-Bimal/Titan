@@ -12,6 +12,8 @@ namespace Titan.Interface.BaseInterface
 
         void Update(T entity);
 
-        void Delete(T entity);   
+        void Delete(T entity);
+
+        T GetById(int id);
     }
 }

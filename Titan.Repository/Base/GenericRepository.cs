@@ -35,8 +35,7 @@ namespace UnitOfWorkWithRepositoryPartens.Repository.Base
         {
             try
             {
-                T existing = _unitOfWork._dbContextInstance.Set<T>().Find(entity);
-                if (existing != null) _unitOfWork._dbContextInstance.Set<T>().Remove(existing);
+               _unitOfWork._dbContextInstance.Set<T>().Remove(entity);
             }
             catch (Exception ex)
             {
@@ -52,7 +51,7 @@ namespace UnitOfWorkWithRepositoryPartens.Repository.Base
             try
             {
                 _unitOfWork._dbContextInstance.Entry(entity).State = EntityState.Modified;
-                _unitOfWork._dbContextInstance.Set<T>().Attach(entity);
+                //_unitOfWork._dbContextInstance.Set<T>().Attach(entity);
             }
             catch (Exception ex)
             {
@@ -73,6 +72,19 @@ namespace UnitOfWorkWithRepositoryPartens.Repository.Base
                 throw ex;
             }
            
+        }
+
+        public T GetById(int id)
+        {
+            try
+            {
+                return this._unitOfWork._dbContextInstance.Set<T>().Find(id);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }

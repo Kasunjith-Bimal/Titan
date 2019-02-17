@@ -43,9 +43,18 @@ namespace Titan.Controllers
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public TestDto Get(int id)
         {
-            return "value";
+            try
+            {
+                return _testService.GetById(id);
+            }
+            catch (Exception ex)
+            {
+
+                _log.LogError(ex, ex.Message, null);
+                return null;
+            }
         }
 
         // POST api/<controller>
@@ -63,15 +72,32 @@ namespace Titan.Controllers
         }
 
         // PUT api/<controller>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPut]
+        public void Put([FromBody]TestDto testDto)
         {
+            try
+            {
+                _testService.Update(testDto);
+            }
+            catch (Exception ex)
+            {
+                _log.LogError(ex, ex.Message, null);
+            }
         }
 
         // DELETE api/<controller>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            try
+            {
+                _testService.Delete(id);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }
