@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using System.Threading.Tasks;
 using Titan.Entity;
 using Titan.Interface.BaseInterface;
 
@@ -40,9 +41,9 @@ namespace Titan.Repository.Base
             GC.SuppressFinalize(this);
         }
 
-        public int Save()
+        public async Task Save()
         {
-            return this._dbContextInstance.SaveChanges();
+            await this._dbContextInstance.SaveChangesAsync();
         }
 
        

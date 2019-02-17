@@ -25,11 +25,11 @@ namespace Titan.Controllers
         }
         // GET: api/<controller>
         [HttpGet]
-        public IEnumerable<TestDto> Get()
+        public async Task<IActionResult> Get()
         {
             try
             {
-                return _testService.Get();
+                return Ok(await _testService.Get());
             }
             catch (Exception ex)
             {
@@ -43,11 +43,11 @@ namespace Titan.Controllers
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
-        public TestDto Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
             try
             {
-                return _testService.GetById(id);
+                return Ok(await _testService.GetById(id));
             }
             catch (Exception ex)
             {
@@ -59,15 +59,17 @@ namespace Titan.Controllers
 
         // POST api/<controller>
         [HttpPost]
-        public void Post([FromBody]TestDto testDto)
+        public async Task<IActionResult> Post([FromBody]TestDto testDto)
         {
             try
             {
-                _testService.Add(testDto);
+                await _testService.Add(testDto);
+                return Ok();
             }
             catch (Exception ex)
             {
                 _log.LogError(ex, ex.Message, null);
+                return null;
             }
         }
 
@@ -87,11 +89,12 @@ namespace Titan.Controllers
 
         // DELETE api/<controller>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {
-                _testService.Delete(id);
+               await _testService.Delete(id);
+               return Ok();
             }
             catch (Exception ex)
             {

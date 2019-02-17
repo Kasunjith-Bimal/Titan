@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Titan.Entity;
 using Titan.Interface.BaseInterface;
 using Titan.Interface.RepositoryInterface;
@@ -22,14 +23,14 @@ namespace Titan.Service
             _mapper = mapper;
         }
 
-        public void Add(TestDto entity)
+        public async Task Add(TestDto entity)
         {
             try
             {
                 TestEntity testEntity = new TestEntity();
                 testEntity = _mapper.Map<TestEntity>(entity);
-                _ITestRepository.Add(testEntity);
-                _unitOfWork.Save();
+                await _ITestRepository.Add(testEntity);
+                await _unitOfWork.Save();
 
             }
             catch (Exception ex)
@@ -40,13 +41,13 @@ namespace Titan.Service
             
         }
 
-        public void Delete(int id)
+        public async Task Delete(int id)
         {
             try
             {
-                TestEntity entity = _ITestRepository.GetById(id);
-                _ITestRepository.Delete(entity);
-                _unitOfWork.Save();
+                TestEntity entity = await _ITestRepository.GetById(id);
+                await _ITestRepository.Delete(entity);
+                await _unitOfWork.Save();
             }
             catch (Exception ex)
             {
@@ -55,14 +56,14 @@ namespace Titan.Service
             }
         }
 
-        public IEnumerable<TestDto> Get()
+        public async Task<IEnumerable<TestDto>> Get()
         {
 
             try
             {
-                IEnumerable<TestEntity> EntityList = _ITestRepository.Get();
+                IEnumerable<TestEntity> EntityList = await _ITestRepository.Get();
                 IEnumerable<TestDto> TestDtoList = _mapper.Map<IEnumerable<TestDto>>(EntityList);
-                return TestDtoList;
+                return await Task.FromResult<IEnumerable<TestDto>>(TestDtoList);
 
             }
             catch (Exception ex)
@@ -74,11 +75,11 @@ namespace Titan.Service
 
         }
 
-        public TestDto GetById(int id)
+        public async Task<TestDto> GetById(int id)
         {
             try
             {
-                TestEntity entity = _ITestRepository.GetById(id);
+                TestEntity entity = await _ITestRepository.GetById(id);
                 return _mapper.Map<TestDto>(entity);
             }
             catch (Exception ex)
@@ -88,15 +89,13 @@ namespace Titan.Service
             }
         }
 
-        public void Update(TestDto entity)
+        public async Task Update(TestDto entity)
         {
             try
             {
-                     TestEntity entitydata = _mapper.Map<TestEntity>(entity);
-                    _ITestRepository.Update(entitydata);
-                    _unitOfWork.Save();
-                
-               
+               TestEntity entitydata = _mapper.Map<TestEntity>(entity);
+               await _ITestRepository.Update(entitydata);
+               await _unitOfWork.Save();
             }
             catch (Exception ex)
             {
