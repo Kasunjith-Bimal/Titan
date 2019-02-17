@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Titan.Entity;
 using Titan.Model;
 
@@ -8,14 +9,14 @@ namespace Titan.Interface.ServiceInterface
 {
     public interface ITestService
     {
-        void Add(TestDto entity);
+        Task Add(TestDto entity);
 
-        IEnumerable<TestDto> Get();
+        Task<IEnumerable<TestDto>> Get();
 
-        TestDto GetById(int id);
+        Task<TestDto> GetById(int id);
 
-        void Update(TestDto entity);
+        Task Update(TestDto entity);
 
-        void Delete(int id);
+        Task Delete(int id);
     }
 }

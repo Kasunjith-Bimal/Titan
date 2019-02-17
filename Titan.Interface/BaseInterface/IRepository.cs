@@ -1,19 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Titan.Interface.BaseInterface
 {
     public interface IRepository<T> where T : class
     {
-        IEnumerable<T> Get();
 
-        void Add(T entity);
+        Task<IEnumerable<T>> Get();
 
-        void Update(T entity);
+        Task Add(T entity);
 
-        void Delete(T entity);
+        Task Update(T entity);
 
-        T GetById(int id);
+        Task Delete(T entity);
+
+        Task<T> GetById(int id);
     }
 }
