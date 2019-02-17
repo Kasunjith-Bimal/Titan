@@ -23,19 +23,23 @@ namespace Titan.Service
             _mapper = mapper;
         }
 
-        public async Task Add(TestDto entity)
+        public async Task<bool> Add(TestDto entity)
         {
+            bool isTrue = false;
             try
             {
                 TestEntity testEntity = new TestEntity();
                 testEntity = _mapper.Map<TestEntity>(entity);
                 await _ITestRepository.Add(testEntity);
                 await _unitOfWork.Save();
+                isTrue = true;
+                return isTrue;
 
             }
             catch (Exception ex)
             {
-
+                isTrue = false;
+                return isTrue;
                 throw ex;
             }
             
@@ -62,13 +66,21 @@ namespace Titan.Service
             try
             {
                 IEnumerable<TestEntity> EntityList = await _ITestRepository.Get();
-                IEnumerable<TestDto> TestDtoList = _mapper.Map<IEnumerable<TestDto>>(EntityList);
-                return await Task.FromResult<IEnumerable<TestDto>>(TestDtoList);
+                if (EntityList != null)
+                {
+                    IEnumerable<TestDto> TestDtoList = _mapper.Map<IEnumerable<TestDto>>(EntityList);
+                    return await Task.FromResult<IEnumerable<TestDto>>(TestDtoList);
+                }
+                else
+                {
+                    return await Task.FromResult<IEnumerable<TestDto>>(null);
+                }
+               
 
             }
             catch (Exception ex)
             {
-
+                return null;
                 throw ex;
             }
            
@@ -80,7 +92,15 @@ namespace Titan.Service
             try
             {
                 TestEntity entity = await _ITestRepository.GetById(id);
-                return _mapper.Map<TestDto>(entity);
+                if(entity != null)
+                {
+                    return _mapper.Map<TestDto>(entity);
+                }
+                else
+                {
+                    return null;
+                }
+               
             }
             catch (Exception ex)
             {
@@ -93,9 +113,12 @@ namespace Titan.Service
         {
             try
             {
-               TestEntity entitydata = _mapper.Map<TestEntity>(entity);
-               await _ITestRepository.Update(entitydata);
-               await _unitOfWork.Save();
+                
+             TestEntity entitydata = _mapper.Map<TestEntity>(entity);
+             await _ITestRepository.Update(entitydata);
+             await _unitOfWork.Save();
+
+             
             }
             catch (Exception ex)
             {
