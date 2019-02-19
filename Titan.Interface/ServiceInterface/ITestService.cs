@@ -15,8 +15,8 @@ namespace Titan.Interface.ServiceInterface
 
         Task<TestDto> GetById(int id);
 
-        Task Update(TestDto entity);
+        Task<bool> Update(TestDto entity);
 
-        Task Delete(int id);
+        Task<bool> Delete(int id);
     }
 }

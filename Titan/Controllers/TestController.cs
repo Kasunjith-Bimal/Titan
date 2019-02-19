@@ -51,7 +51,6 @@ namespace Titan.Controllers
                 TestDto obj = await _testService.GetById(id);
                 if (obj != null)
                 {
-                   
                     return obj;
                 }
                 else
@@ -87,7 +86,6 @@ namespace Titan.Controllers
                 else
                 {
                     return false;
-                    throw new NotSaveCustomException("No data save", $"Please check your ented data");
                 }
                
             }
@@ -101,33 +99,54 @@ namespace Titan.Controllers
 
         // PUT api/<controller>/5
         [HttpPut("{id}")]
-        public async Task Put(int id ,[FromBody]TestDto testDto)
+        public async Task<bool> Put(int id ,[FromBody]TestDto testDto)
         {
             try
             {
+                if (ModelState.IsValid)
+                {
+                    if (await _testService.Update(testDto))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
 
-              await _testService.Update(testDto);
-             
+                }
+                else
+                {
+                    return false;
+                }
             }
             catch (Exception ex)
             {
                 _log.LogError(ex, ex.Message, null);
+                throw new NotUpdateCustomeException("No data update", $"Please check your ented data or connection");
             }
         }
 
         // DELETE api/<controller>/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<bool> Delete(int id)
         {
             try
             {
-               await _testService.Delete(id);
-               return Ok();
+                if (await _testService.Delete(id))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }    
             }
             catch (Exception ex)
             {
 
-                throw ex;
+                _log.LogError(ex, ex.Message, null);
+                throw new NotDeleteCustomeException("No data delete", $"Please check your enterd data or connection");
             }
         }
     }

@@ -38,24 +38,27 @@ namespace Titan.Service
             }
             catch (Exception ex)
             {
-                isTrue = false;
                 return isTrue;
-                throw ex;
+                throw ex;    
             }
             
         }
 
-        public async Task Delete(int id)
+        public async Task<bool> Delete(int id)
         {
+            bool isTrue = false;
             try
             {
                 TestEntity entity = await _ITestRepository.GetById(id);
                 await _ITestRepository.Delete(entity);
                 await _unitOfWork.Save();
+                isTrue = true;
+                return isTrue;
             }
             catch (Exception ex)
             {
-
+                isTrue = false;
+                return isTrue;
                 throw ex;
             }
         }
@@ -109,20 +112,24 @@ namespace Titan.Service
             }
         }
 
-        public async Task Update(TestDto entity)
+        public async Task<bool> Update(TestDto entity)
         {
+            bool isTrue = false;
             try
             {
                 
              TestEntity entitydata = _mapper.Map<TestEntity>(entity);
              await _ITestRepository.Update(entitydata);
              await _unitOfWork.Save();
+             isTrue = true;
+             return isTrue;
 
-             
+
             }
             catch (Exception ex)
             {
-
+                isTrue = false;
+                return isTrue;
                 throw ex;
             }
         }
