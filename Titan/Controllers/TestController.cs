@@ -28,7 +28,6 @@ namespace Titan.Controllers
         [HttpGet]
         public async Task<IEnumerable<TestDto>> Get()
         {
-          
             try
             {
                 return await _testService.Get();
@@ -38,8 +37,6 @@ namespace Titan.Controllers
                 _log.LogError(ex, ex.Message, null);
                 return null;
             }
-
-
         }
 
         // GET api/<controller>/5
@@ -75,13 +72,11 @@ namespace Titan.Controllers
         {
             try
             {
-
-
                 if (ModelState.IsValid)
                 {
                     if (await _testService.Add(testDto))
                     {
-                        return CreatedAtAction("Get", new { id = testDto.TestEntityId}, testDto);
+                        return Ok(new MessageDto { Message = "Data is Saved", StatusCode = "201" });
                     }
                     else
                     {
@@ -121,7 +116,7 @@ namespace Titan.Controllers
 
             if (await _testService.Update(testDto)){
 
-             return Ok();
+                    return Ok(new MessageDto { Message = "Data is updated" , StatusCode = "200" });
             }
             else
             {
@@ -159,7 +154,7 @@ namespace Titan.Controllers
 
                 if (await _testService.Delete(id))
                 {
-                    return Ok();
+                    return Ok(new MessageDto { Message = "Data is deleted", StatusCode = "200" });
                 }
                 else
                 {
