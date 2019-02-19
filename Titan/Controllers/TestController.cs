@@ -44,48 +44,53 @@ namespace Titan.Controllers
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
-        public async Task<TestDto> Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
             try
             {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
                 TestDto obj = await _testService.GetById(id);
-                if (obj != null)
+                if (obj == null)
                 {
-                    return obj;
+                    return NotFound();
+
                 }
-                else
-                {
-                    throw new NotFoundCustomException("No data found", $"Please check your parameters id: {id}");
-                }
-              
+
+                return Ok(obj);
             }
             catch (Exception ex)
             {
                 _log.LogError(ex, ex.Message, null);
-                throw new NotFoundCustomException("No data found", $"Please check your parameters id: {id}");
+                throw new NotFoundCustomException("No data found", $"Please check your parameters id: {id} or connection string");
             }
         }
 
         // POST api/<controller>
         [HttpPost]
-        public async Task<bool> Post([FromBody]TestDto testDto)
+        public async Task<IActionResult> Post([FromBody]TestDto testDto)
         {
             try
             {
+
+
                 if (ModelState.IsValid)
                 {
                     if (await _testService.Add(testDto))
                     {
-                        return true;
+                        return CreatedAtAction("Get", new { id = testDto.TestEntityId}, testDto);
                     }
                     else
                     {
-                        return false;
+                        return BadRequest(ModelState);
                     }   
                 }
                 else
                 {
-                    return false;
+                    return BadRequest(ModelState);
                 }
                
             }
@@ -99,47 +104,66 @@ namespace Titan.Controllers
 
         // PUT api/<controller>/5
         [HttpPut("{id}")]
-        public async Task<bool> Put(int id ,[FromBody]TestDto testDto)
+        public async Task<IActionResult> Put(int id ,[FromBody]TestDto testDto)
         {
             try
+            { 
+
+            if (!ModelState.IsValid)
             {
-                if (ModelState.IsValid)
+                return BadRequest(ModelState);
+            }
+
+            if (id != testDto.TestEntityId)
+            {
+                return BadRequest();
+            }
+
+            if (await _testService.Update(testDto)){
+
+             return Ok();
+            }
+            else
+            {
+             return NotFound();
+            }
+
+            }
+            catch (Exception ex)
+            {
+                TestDto obj = await _testService.GetById(id);
+                if (obj == null)
                 {
-                    if (await _testService.Update(testDto))
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                    return NotFound();
 
                 }
                 else
                 {
-                    return false;
-                }
-            }
-            catch (Exception ex)
-            {
-                _log.LogError(ex, ex.Message, null);
-                throw new NotUpdateCustomeException("No data update", $"Please check your ented data or connection");
+                    _log.LogError(ex, ex.Message, null);
+                    throw new NotUpdateCustomeException("No data update", $"Please check your ented data or connection");
+                  
+                }      
             }
         }
 
         // DELETE api/<controller>/5
         [HttpDelete("{id}")]
-        public async Task<bool> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
                 if (await _testService.Delete(id))
                 {
-                    return true;
+                    return Ok();
                 }
                 else
                 {
-                    return false;
+                    return NotFound();
                 }    
             }
             catch (Exception ex)
