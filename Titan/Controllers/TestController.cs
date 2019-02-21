@@ -74,14 +74,18 @@ namespace Titan.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    if (await _testService.Add(testDto))
+
+                    TestDto obj =  await _testService.Add(testDto);
+                    if (obj == null)
                     {
-                        return Ok(new MessageDto { Message = "Data is Saved", StatusCode = "201" });
+                        return NotFound();
+
                     }
                     else
                     {
-                        return BadRequest(ModelState);
-                    }   
+                        return CreatedAtAction(nameof(Get), new { id = obj.TestEntityId }, obj);
+                    }
+
                 }
                 else
                 {

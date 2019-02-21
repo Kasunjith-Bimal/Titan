@@ -9,7 +9,7 @@ namespace Titan.Interface.ServiceInterface
 {
     public interface ITestService
     {
-        Task<bool> Add(TestDto entity);
+        Task<TestDto> Add(TestDto entity);
 
         Task<IEnumerable<TestDto>> Get();
 

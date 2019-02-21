@@ -1,0 +1,28 @@
+2019-02-21T23:28:33.0532949+05:30 0HLKO4OON0634:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:64481/index.html   (ca22a1cb)
+2019-02-21T23:28:35.0116228+05:30 0HLKO4OON0634:00000001 [INF] Request finished in 2017.5272ms 200 text/html (791a596a)
+2019-02-21T23:28:35.7622013+05:30 0HLKO4OON0634:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:64481/swagger-ui-bundle.js.map   (ca22a1cb)
+2019-02-21T23:28:35.9477449+05:30 0HLKO4OON0635:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:64481/swagger/v1/swagger.json   (ca22a1cb)
+2019-02-21T23:28:37.0845140+05:30 0HLKO4OON0635:00000001 [INF] Request finished in 1158.6106ms 200 application/json;charset=utf-8 (791a596a)
+2019-02-21T23:28:37.8291004+05:30 0HLKO4OON0634:00000002 [INF] Sending file. Request path: '"/swagger-ui-bundle.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-21T23:28:37.8382461+05:30 0HLKO4OON0634:00000002 [INF] Request finished in 2235.3954ms 200 text/plain (791a596a)
+2019-02-21T23:28:38.2863803+05:30 0HLKO4OON0635:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:64481/webpack.config.js   (ca22a1cb)
+2019-02-21T23:28:38.3520181+05:30 0HLKO4OON0635:00000002 [INF] Request finished in 57.484ms 404  (791a596a)
+2019-02-21T23:28:42.0086985+05:30 0HLKO4OON0634:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:64481/swagger-ui-standalone-preset.js.map   (ca22a1cb)
+2019-02-21T23:28:42.0496542+05:30 0HLKO4OON0634:00000003 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js.map"'. Physical path: '"N/A"' (27b0a520)
+2019-02-21T23:28:42.0533784+05:30 0HLKO4OON0634:00000003 [INF] Request finished in 46.917ms 200 text/plain (791a596a)
+2019-02-21T23:28:42.0733606+05:30 0HLKO4OON0635:00000003 [INF] Request starting HTTP/1.1 HEAD http://localhost:64481/webpack.config.js   (ca22a1cb)
+2019-02-21T23:28:42.1250130+05:30 0HLKO4OON0635:00000003 [INF] Request finished in 9.1329ms 404  (791a596a)
+2019-02-21T23:28:56.4594312+05:30 0HLKO4OON0634:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:64481/api/Test application/json 48 (ca22a1cb)
+2019-02-21T23:28:56.4803812+05:30 0HLKO4OON0634:00000004 [INF] Policy execution successful. (0204925d)
+2019-02-21T23:28:57.6656695+05:30 0HLKO4OON0634:00000004 [INF] Executing action method "Titan.Controllers.TestController.Post (Titan)" with arguments (["Titan.Model.TestDto"]) - ModelState is Valid (ba7f4ac2)
+2019-02-21T23:29:10.8024854+05:30 0HLKO4OON0634:00000004 [INF] Entity Framework Core "3.0.0-preview.19074.3" initialized '"TitanDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-02-21T23:29:17.0360719+05:30 0HLKO4OON0634:00000004 [INF] Executed DbCommand ("357"ms) [Parameters=["@p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [TestEntitys] ([TestEntityName])
+VALUES (@p0);
+SELECT [TestEntityId]
+FROM [TestEntitys]
+WHERE @@ROWCOUNT = 1 AND [TestEntityId] = scope_identity();" (0723d8ff)
+2019-02-21T23:29:42.9499186+05:30 0HLKO4OON0634:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-21T23:29:42.9829528+05:30 0HLKO4OON0634:00000004 [INF] Executed action "Titan.Controllers.TestController.Post (Titan)" in 46390.2673ms (afa2e885)
+2019-02-21T23:29:43.1068456+05:30 0HLKO4OON0634:00000004 [INF] Request finished in 46550.9369ms 200 application/json; charset=utf-8 (791a596a)

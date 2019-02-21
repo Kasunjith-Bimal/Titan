@@ -23,22 +23,23 @@ namespace Titan.Service
             _mapper = mapper;
         }
 
-        public async Task<bool> Add(TestDto entity)
+        public async Task<TestDto> Add(TestDto entity)
         {
-            bool isTrue = false;
+           
             try
             {
                 TestEntity testEntity = new TestEntity();
                 testEntity = _mapper.Map<TestEntity>(entity);
                 await _ITestRepository.Add(testEntity);
                 await _unitOfWork.Save();
-                isTrue = true;
-                return isTrue;
+                TestDto dto = new TestDto();
+                dto = _mapper.Map<TestDto>(testEntity);
+                return dto;
 
             }
             catch (Exception ex)
             {
-                return isTrue;
+              
                 throw ex;    
             }
             
